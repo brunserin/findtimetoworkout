@@ -1,7 +1,7 @@
 
-# things to remember for github:
+# Things to remember for github
 
-## to clone the folder
+## to clone the folder:
 * navigate to where you want to put the folder on your local, do `git clone githuburl.com`
 
 
@@ -14,7 +14,7 @@
 * `git push origin master` (where it says "master", this is the branch you are pushing to. if you are on a separate branch, you should put the name of that branch there)
 
 
-## branches
+## branches:
 * `git checkout -b nameofbranch` to create and switch to a new branch 
 * to add files to this branch use the same process as above for adding files, be sure you are on that branch though and push to that branch
 * when you're done pushing, go on github website and do 'open pull request' and make a pull request
