@@ -1,1 +1,19 @@
 /* css specifically for content on calendar page */
+.calendar-page-content {
+	display: inline-block;
+	background: lightblue;
+	width: 800px;
+}
+
+.calendar-box {
+	padding: 20px;
+	float: left;
+}
+
+.add-workout-button {
+	margin-top: 300px;
+	background-color: lightgrey;
+	border-radius: 10px;
+	margin-left: 630px;
+	width: 85px;
+}
