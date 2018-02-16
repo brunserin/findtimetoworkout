@@ -72,9 +72,11 @@ function getUserInput(){
   if (date=="" || startTime=="" || endTime=="" || eventDesc==""){
     alert("All your input fields should have a meaningful value.");
     return
-  }
-  else return {'date': date, 'startTime': startTime, 'endTime': endTime,
+  } else {
+    alert("Congratulations, you have successfully scheduled a workout.");
+    return {'date': date, 'startTime': startTime, 'endTime': endTime,
                'eventTitle': eventDesc}
+  }
 }
 
 
