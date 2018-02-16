@@ -3,21 +3,29 @@
 .friends-list {
 	overflow: hidden;
 	overflow-y: scroll;
-	list-style: none
+	list-style: none;
+	margin-left: -30px;
 }
 
 .best-friends {
 	height: 73px;
-	width: 18%;
 }
 
 .all-friends {
 	height: 400px;
-	width: 18%;
 }
 
 .friends-header {
 	font-weight: bold;
-	margin-left: 40px;
+	margin-left: 10px;
+}
+
+.friends-list-wrapper {
+	background-color: white;
+	width: 200px;
+	margin-left: 20px;
+	height: 560px;
+	border-radius: 5px;
+	padding: 10px;
 	margin-top: 20px;
 }

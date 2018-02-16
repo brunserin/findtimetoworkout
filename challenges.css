@@ -1,1 +1,24 @@
-/* css specifically for content on challenges page */			
+/* css specifically for content on challenges page */
+
+.chart {
+	background-color: white;
+	border-radius: 5px;
+	padding-left: 10px;
+	margin-left: 15px;
+	
+	width: 520px;
+	height: 250px;
+	float: left;
+}
+
+.chart-wrapper {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.log-activity-button {
+	margin-top: 110px;
+	margin-left: 20px;
+	background-color: orange;
+	border-color: orange;
+}
