@@ -1,23 +1,56 @@
 /* css specifically for content on calendar page */
+ast {
+	color: red;
+}
+
+body {
+	background-color: #e1deec;
+}
+
 .calendar-form-wrapper {
 	display: inline-block;
-	margin-top: 5px;
+	padding-top: 20px;
+	padding-bottom: 5px;
 }
 
 .calendar-box {
-	border: 3px solid orange;
-	border-radius: 2px;
+	border-radius: 5px;
 	margin-left: 20px;
+	float: left;
+	background-color: white;
+	padding: 5px;
 }
 
 .add-workout-form {
-	height: 500px;
-	width: 500px;
+	width: 560px;
 	margin-left: 20px;
+	display: inline-block;
+	border-radius: 5px;
+	background-color: white;
+	padding: 5px;
+}
+
+.asteriskField {
+	color: red;
 	float: right;
 }
 
-.submit-workout-Button{
-	border-radius: 12px;
-	background-color: orange;
+.form-field {
+	border-radius: 4px;
+	box-shadow: none;
+	margin-left: 5px;
+	color: #2D283E;
 }
+
+.form-line {
+	margin-bottom: 5px;
+}
+
+.schedule-workout-text {
+	margin-top: -10px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #2D283E;
+}
+
+

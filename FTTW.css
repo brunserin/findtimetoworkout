@@ -1,6 +1,4 @@
 /* css for header and other shared elements of pages */
-.head-bar {
-	background: pink;
-	height: 100px;
-	width: 800px;
+.navbar {
+	background-color: #564F6F;
 }
