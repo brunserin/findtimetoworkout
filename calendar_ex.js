@@ -103,4 +103,5 @@ function createEvent(eventData) {
       console.log(resp);
       alert("Your event was added to the calendar.");
     });
+    location.reload();
 }
