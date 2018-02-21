@@ -51,14 +51,18 @@
 }
 
 
-.log-activity-button:hover {
+.log-activity-button-run:hover,
+.log-activity-button-steps:hover {
 	background-color: #FFC107;
 	border-color: #564F6F;
 }
 
-.log-activity-button.btn:active,
-.log-activity-button.btn:target,
-.log-activity-button.btn:active:focus {
+.log-activity-button-run.btn:active,
+.log-activity-button-run.btn:target,
+.log-activity-button-run.btn:active:focus,
+.log-activity-button-steps.btn:active,
+.log-activity-button-steps.btn:target,
+.log-activity-button-steps.btn:active:focus {
 	background-color: #FFC107;
 	transform: translateY(4px);
 }
