@@ -24,5 +24,12 @@
 
 .log-activity-button:hover {
 	background-color: #FFC107;
-	outline: none;
+	border-color: #564F6F;
+}
+
+.log-activity-button.btn:active,
+.log-activity-button.btn:target,
+.log-activity-button.btn:active:focus {
+	background-color: #FFC107;
+	transform: translateY(4px);
 }
