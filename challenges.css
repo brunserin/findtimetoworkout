@@ -21,3 +21,8 @@
 	background-color: #564F6F;
 	border-color: #564F6F ;
 }
+
+.log-activity-button:hover {
+	background-color: #FFC107;
+	outline: none;
+}
