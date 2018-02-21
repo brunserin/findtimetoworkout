@@ -70,4 +70,7 @@ window.onclick = function(event) {
     if (event.target == form1) {
         form1.style.display = "none";
     }
+    if (event.target == form2) {
+        form2.style.display = "none";
+    }
 }
