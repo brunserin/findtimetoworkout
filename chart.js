@@ -51,3 +51,23 @@ function drawChart() {
   chart1.draw(data1, options1);
   chart2.draw(data2, options2);
 }
+
+var form1 = document.getElementById('form1');
+var form2 = document.getElementById('form2');
+var bR = document.getElementById('bLogActivityR');
+var bS = document.getElementById('bLogActivityS');
+
+bR.onclick = function() {
+    form1.style.display = "block";
+}
+
+bS.onclick = function() {
+    form2.style.display = "block";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == form1) {
+        form1.style.display = "none";
+    }
+}
