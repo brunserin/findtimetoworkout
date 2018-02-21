@@ -19,7 +19,7 @@ function drawChart() {
       },
       pieHole: 0.5,
       slices: {
-            0: { color: '#2D283E' },
+            0: { color: '#FFC107'},
             1: { color: '#564F6F' }
       },
       legend: {position: 'right', textStyle: {color: 'black', fontSize: 16}}
@@ -38,7 +38,7 @@ function drawChart() {
       },
       pieHole: 0.5,
       slices: {
-            0: { color: '#2D283E' },
+            0: { color: '#FFC107' },
             1: { color: '#564F6F' }
       },
       legend: {position: 'right', textStyle: {color: 'black', fontSize: 16}}
