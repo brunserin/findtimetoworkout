@@ -151,7 +151,6 @@ img.profile-photo-md {
   min-height: 90px;
   padding: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #f1f2f2;
 	float: right;
 	position: fixed;
 	left: 550px;
@@ -160,6 +159,15 @@ img.profile-photo-md {
 .create-post .form-group{
   margin-bottom: 0;
   display: inline-flex;
+}
+
+#exampleTextarea{
+	margin-right: 5px;
+	max-height: 104px;
+}
+
+#publishIcons{
+	position: fixed;
 }
 
 .create-post .form-group .form-control{
