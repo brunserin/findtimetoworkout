@@ -10,7 +10,8 @@
 }
 
 .buttonColorChange{
-
+	border-color: #564F6F ;
+	background-color: #564F6F;
 }
 .buttonColorChange:hover{
 	background-color: #FFC107;
@@ -42,8 +43,6 @@
 
 .bSubmitLogActivity{
 		margin: 0 auto ;
-		background-color: #564F6F;
-		border-color: #564F6F ;
 		display: flex;
 		justify-content: center;
 		margin-top: 10px;
@@ -55,28 +54,22 @@
 	margin: 0 auto ;
 	margin-top: 110px;
 	margin-left: 20px;
-	background-color: #564F6F;
 	position: fixed;
 	top: 204px;
 	left: 316px;
-	border-color: #564F6F ;
 }
 
 #bLogActivityR{
 	margin: 0 auto ;
 	margin-top: 110px;
 	margin-left: 20px;
-	background-color: #564F6F;
 	position: fixed;
 	top: 424px;
 	left: 316px;
-	border-color: #564F6F ;
 }
 
 
 #bSoloChallenge{
-		border-color: #564F6F ;
-		background-color: #564F6F;
 		position: fixed;
 		border-radius: 3px;
 		color: white;
@@ -89,8 +82,6 @@
 }
 
 #bGroupChallenge{
-	border-color: #564F6F ;
-	background-color: #564F6F;
 	position: fixed;
 	top: 140px;
 	border-radius: 3px;
@@ -216,8 +207,6 @@ img.profile-photo-md {
 	position: fixed;
 	top: 80px;
 	left: 1000px;
-	border-color: #564F6F ;
-	background-color: #564F6F;
 }
 
 
