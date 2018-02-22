@@ -27,7 +27,7 @@ function drawChart() {
 
   var data2 = google.visualization.arrayToDataTable([
     ['Type', 'Number'],
-    ['Completed',     11],
+    ['Completed',     18],
     ['Remaining',     2]
   ]);
 
