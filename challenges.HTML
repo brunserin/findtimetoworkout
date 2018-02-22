@@ -1,114 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Challenges</title>
-	<link rel="shortcut icon" type="image/x-icon" href="running_icon.png" />
+    <title>Challenges</title>
+    <link rel="shortcut icon" type="image/x-icon" href="running_icon.png" />
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="FTTW.css">
-	<link rel="stylesheet" type="text/css" href="challenges.css"/>
+    <link rel="stylesheet" type="text/css" href="FTTW.css">
+    <link rel="stylesheet" type="text/css" href="challenges.css" />
 </head>
+
 <body>
-	<nav class="navbar sticky-top navbar-expand-sm navbar-dark">
-		<a class="navbar-brand" href="calendar.HTML">Find Time to Work Out</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-				<a class="nav-item nav-link" href="calendar.HTML"><i class="fas fa-calendar-alt"></i> Calendar</a>
-				<a class="nav-item nav-link active" href="challenges.HTML"><i class="fas fa-trophy"></i> Challenges <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="friends.HTML"><i class="fas fa-users"></i> Friends</a>
-			</div>
-		</div>
-	</nav>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="calendar.HTML">Find Time to Work Out</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="calendar.HTML"><i class="fas fa-calendar-alt"></i> Calendar</a>
+                <a class="nav-item nav-link active" href="challenges.HTML"><i class="fas fa-trophy"></i> Challenges <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="friends.HTML"><i class="fas fa-users"></i> Friends</a>
+            </div>
+        </div>
+    </nav>
 
-	<button id="bSoloChallenge" class="btn btn-primary buttonColorChange" type="submit"><i class="fas fa-plus"></i>  New Solo Challenge </button>
-	<button id="bGroupChallenge" class="btn btn-primary buttonColorChange" type="submit"><i class="fas fa-plus"></i> New Group Challenge </button>
+    <button id="bSoloChallenge" class="btn btn-primary buttonColorChange" type="submit"><i class="fas fa-plus"></i> New Solo Challenge </button>
+    <button id="bGroupChallenge" class="btn btn-primary buttonColorChange" type="submit"><i class="fas fa-plus"></i> New Group Challenge </button>
 
-	<div class="chart-wrapper-steps">
-		<div class="chart" ><div id="donutchart1" style="width: 500px; height: 200px;"></div></div>
-	</div>
+    <div class="chart-wrapper-steps">
+        <div class="chart">
+            <div id="donutchart1" style="width: 500px; height: 200px;"></div>
+        </div>
+    </div>
 
-	<div class="chart-wrapper-running">
-		<div class="chart" ><div id="donutchart2" style="width: 500px; height: 200px;"></div></div>
-	</div>
+    <div class="chart-wrapper-running">
+        <div class="chart">
+            <div id="donutchart2" style="width: 500px; height: 200px;"></div>
+        </div>
+    </div>
 
-	<div> <button class="btn btn-primary buttonColorChange" type="submit" id="bLogActivityR"><i class="fas fa-plus"></i> Log Activity</button> </div>
-	<div> <button class="btn btn-primary buttonColorChange" type="submit" id="bLogActivityS"><i class="fas fa-plus"></i> Log Activity</button> </div>
+    <div>
+        <button class="btn btn-primary buttonColorChange" type="submit" id="bLogActivityR"><i class="fas fa-plus"></i> Log Activity</button>
+    </div>
+    <div>
+        <button class="btn btn-primary buttonColorChange" type="submit" id="bLogActivityS"><i class="fas fa-plus"></i> Log Activity</button>
+    </div>
 
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-		<div class="container">
-		    <div class="create-post">
-		        <div class="row">
-		            <div class="col-md-8">
-		                <div class="row">
-		            		<div class="col-md-7 col-sm-7">
-		                      <div class="form-group">
-		                        <img src="http://cdns2.freepik.com/free-photo/super-simple-avatar_318-1018.jpg" alt="" class="profile-photo-md">
-		                        <textarea name="texts" id="exampleTextarea" cols="30" rows="2" class="form-control" placeholder="Share Progress"></textarea>
-		                      </div>
-		                    </div>
-		                    <div class="col-md-5 col-sm-5">
-		                      <div class="tools">
-		                        <ul id="publishIcons" class="publishing-tools list-inline">
-		                          <li><a href="#"><i class="fa fa-camera-retro"></i></a></li>
-		                          <li><a href="#"><i class="fa fa-paperclip"></i></a></li>
-		                          <li><a href="#"><i class="fa fa-map"></i></a></li>
-		                        </ul>
-		                        <button id="bPublish" class="btn btn-primary pull-right buttonColorChange">Publish</button>
-		                      </div>
-		                    </div>
-		            	</div>
-		        	</div>
-		    	</div>
-		    </div>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="container">
+        <div class="create-post">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-7 col-sm-7">
+                            <div class="form-group">
+                                <img src="http://cdns2.freepik.com/free-photo/super-simple-avatar_318-1018.jpg" alt="" class="profile-photo-md">
+                                <textarea name="texts" id="exampleTextarea" cols="30" rows="2" class="form-control" placeholder="Share Progress"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                            <div class="tools">
+                                <ul id="publishIcons" class="publishing-tools list-inline">
+                                    <li><a href="#"><i class="fa fa-camera-retro"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-paperclip"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-map"></i></a></li>
+                                </ul>
+                                <button id="bPublish" class="btn btn-primary pull-right buttonColorChange">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-				<div id="newsFeed" style="overflow-y: scroll;">
-					<li class="newsFeedListItem">feed item 1</li>
-					<li class="newsFeedListItem">feed item 2</li>
-					<li class="newsFeedListItem">feed item 3</li>
-					<li class="newsFeedListItem">feed item 4</li>
-					<li class="newsFeedListItem">feed item 5</li>
-					<li class="newsFeedListItem">feed item 6</li>
-					<li class="newsFeedListItem">feed item 7</li>
-					<li class="newsFeedListItem">feed item 8</li>
-					<li class="newsFeedListItem">feed item 9</li>
-					<li class="newsFeedListItem">feed item 10</li>
-				</div>
+        <div id="newsFeed" style="overflow-y: scroll;">
+            <li class="newsFeedListItem">feed item 1</li>
+            <li class="newsFeedListItem">feed item 2</li>
+            <li class="newsFeedListItem">feed item 3</li>
+            <li class="newsFeedListItem">feed item 4</li>
+            <li class="newsFeedListItem">feed item 5</li>
+            <li class="newsFeedListItem">feed item 6</li>
+            <li class="newsFeedListItem">feed item 7</li>
+            <li class="newsFeedListItem">feed item 8</li>
+            <li class="newsFeedListItem">feed item 9</li>
+            <li class="newsFeedListItem">feed item 10</li>
+        </div>
 
-	<form id="form1" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
-	        <div class="form-content">
-	          <input class="input-lg logNumber" type="number" placeholder="5 (miles)" name="" size="40px" value="">
-						<button class="bSubmitLogActivity btn btn-primary buttonColorChange" type="submit"> Submit </button>
-	        </div>
-	</form>
+        <form id="form1" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
+            <div class="form-content">
+                <input id="num-miles" class="input-lg logNumber" type="number" placeholder="5 (miles)" name="" size="40px" value="">
+                <button  id="submit-miles" class="bSubmitLogActivity btn btn-primary buttonColorChange" type="submit"> Submit </button>
+            </div>
+        </form>
 
-	<form id="form2" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
-		<div class="form-content">
-			<input class="input-lg logNumber" type="number" placeholder="1000 (steps)" name="" size="40px" value="">
-			<button class="bSubmitLogActivity btn btn-primary buttonColorChange" type="submit"> Submit </button>
-		</div>
-	</form>
+        <form id="form2" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
+            <div class="form-content">
+                <input class="input-lg logNumber" type="number" placeholder="1000 (steps)" name="" size="40px" value="">
+                <button class="bSubmitLogActivity btn btn-primary buttonColorChange" type="submit"> Submit </button>
+            </div>
+        </form>
 
-	<form id="form3" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
-	        <div class="form-content">
-						<button class="bSubmitLogActivity btn btn-primary buttonColorChange" type="submit"> Submit </button>
-	        </div>
-	</form>
+        <form id="form3" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
+            <div class="form-content">
+                <button class="bSubmitLogActivity btn btn-primary buttonColorChange" type="submit"> Submit </button>
+            </div>
+        </form>
 
-	<form id="form4" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
-					<div class="form-content">
-						<button class="bSubmitLogActivity btn btn-primary buttonColorChange" type="submit"> Submit </button>
-					</div>
-	</form>
+        <form id="form4" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
+            <div class="form-content">
+                <button class="bSubmitLogActivity btn btn-primary buttonColorChange" type="submit"> Submit </button>
+            </div>
+        </form>
 
 </body>
 <script type="text/javascript" src="chart.js"></script>
+
 </html>

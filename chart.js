@@ -1,7 +1,9 @@
 var totalSteps = 10000;
 var stepsCompleted = 4000;
 var stepsRemaining = totalSteps - stepsCompleted;
-
+var milesCompleted = 12;
+var milesRemaining = 8;
+var chart2;
 
 google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(drawChart);
@@ -27,8 +29,8 @@ function drawChart() {
 
   var data2 = google.visualization.arrayToDataTable([
     ['Type', 'Number'],
-    ['Completed',     18],
-    ['Remaining',     2]
+    ['Completed',     milesCompleted],
+    ['Remaining',     milesRemaining]
   ]);
 
   var options2 = {
@@ -45,7 +47,7 @@ function drawChart() {
   };
 
   var chart1 = new google.visualization.PieChart(document.getElementById('donutchart1'));
-  var chart2 = new google.visualization.PieChart(document.getElementById('donutchart2'));
+  chart2 = new google.visualization.PieChart(document.getElementById('donutchart2'));
 
 
   chart1.draw(data1, options1);
@@ -58,6 +60,7 @@ var bR = document.getElementById('bLogActivityR');
 var bS = document.getElementById('bLogActivityS');
 var bSC = document.getElementById('bSoloChallenge');
 var bGC = document.getElementById('bGroupChallenge');
+var submitR = document.getElementById('submit-miles');
 
 bR.onclick = function() {
     form1.style.display = "block";
@@ -71,6 +74,17 @@ bSC.onclick = function() {
 }
 bGC.onclick = function() {
     form4.style.display = "block";
+}
+
+submitR.onclick = function() {
+	var numMiles = 5;//document.getElementById('num-miles').innerHTML;
+	if(numMiles > milesRemaining){
+		numMiles = milesRemaining;
+	}
+    milesCompleted += numMiles;
+    milesRemaining -= numMiles;
+    drawChart();
+    chart2.draw(data2, options2);
 }
 
 
