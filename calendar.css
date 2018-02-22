@@ -34,6 +34,18 @@ ast {
 	background-color: #564F6F;
 }
 
+.submit-workout-button:hover{
+	background-color: #FFC107;
+	border-color: #564F6F;
+}
+
+.submit-workout-button:active,
+.submit-workout-button.btn:target,
+.submit-workout-button.btn:active:focus{
+	background-color: #FFC107;
+	transform: translateY(4px);
+}
+
 .form-field {
 	border-radius: 4px;
 	box-shadow: none;
@@ -50,16 +62,4 @@ ast {
 	font-size: 40px;
 	font-weight: bold;
 	color: #2D283E;
-}
-
-.submit-workout-button:hover{
-	background-color: #564F6F;
-	border-color: #564F6F;
-}
-
-.submit-workout-button:active,
-.submit-workout-button:target,
-.submit-workout-button:focus{
-	background-color: #564F6F;
-	transform: translateY(4px);
 }
