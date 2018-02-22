@@ -10,7 +10,6 @@ ast {
 }
 
 .calendar-box {
-	border-radius: 5px;
 	margin-left: 20px;
 	float: left;
 	background-color: white;
@@ -22,7 +21,6 @@ ast {
 	width: 600px;
 	margin-left: 20px;
 	display: inline-block;
-	border-radius: 5px;
 	background-color: white;
 	padding: 5px;
 }
@@ -30,6 +28,10 @@ ast {
 .asteriskField {
 	color: red;
 	float: right;
+}
+
+.submit-workout-button{
+	background-color: #564F6F;
 }
 
 .form-field {
@@ -48,4 +50,16 @@ ast {
 	font-size: 40px;
 	font-weight: bold;
 	color: #2D283E;
+}
+
+.submit-workout-button:hover{
+	background-color: #564F6F;
+	border-color: #564F6F;
+}
+
+.submit-workout-button:active,
+.submit-workout-button:target,
+.submit-workout-button:focus{
+	background-color: #564F6F;
+	transform: translateY(4px);
 }

@@ -6,16 +6,19 @@
 	padding-left: 10px;
 	margin-left: 15px;
 	width: 520px;
-	height: 250px;
+	height: 200px;
+}
+
+.buttonColorChange{
+
 }
 
 .chart-wrapper-steps {
 	margin: 0 auto;
 	float: right;
 	display: block;
-	margin-top: 25px;
 	position: fixed;
-	left: 800px;
+	top: 200px;
 }
 
 .chart-wrapper-running {
@@ -23,9 +26,7 @@
 	float: right;
 	display: block;
 	position: fixed;
-	top: 358px;
-  left: 800px;
-	margin-right: 15px;
+	top: 420px;
 }
 
 .bSubmitLogActivity{
@@ -36,43 +37,67 @@
 		justify-content: center;
 		margin-top: 10px;
 		color: white;
+		border-radius: 3px;
 }
 
-.log-activity-button-steps {
+#bLogActivityS{
 	margin: 0 auto ;
 	margin-top: 110px;
 	margin-left: 20px;
 	background-color: #564F6F;
 	position: fixed;
-	top: 90px;
-	left: 1114px;
+	top: 204px;
+	left: 316px;
 	border-color: #564F6F ;
 }
 
-.log-activity-button-run {
+#bLogActivityR{
 	margin: 0 auto ;
 	margin-top: 110px;
 	margin-left: 20px;
 	background-color: #564F6F;
 	position: fixed;
-	top: 370px;
-	left: 1114px;
+	top: 424px;
+	left: 316px;
 	border-color: #564F6F ;
 }
 
 
-.log-activity-button-run:hover,
-.log-activity-button-steps:hover {
+#bSoloChallenge{
+		border-color: #564F6F ;
+		background-color: #564F6F;
+		position: fixed;
+		border-radius: 3px;
+		color: white;
+		width: 500px;
+		height: 40px;
+		margin-top: 25px;
+		margin-left: 25px;
+
+
+}
+
+#bGroupChallenge{
+	border-color: #564F6F ;
+	background-color: #564F6F;
+	position: fixed;
+	top: 140px;
+	border-radius: 3px;
+	color: white;
+	width: 500px;
+	height: 40px;
+	margin-left: 25px;
+
+}
+
+.buttonColorChange:hover{
 	background-color: #FFC107;
 	border-color: #564F6F;
 }
 
-.log-activity-button-run.btn:active,
-.log-activity-button-run.btn:target,
-.log-activity-button-run.btn:active:focus,
-.log-activity-button-steps.btn:active,
-.log-activity-button-steps.btn:target,
-.log-activity-button-steps.btn:active:focus {
+.buttonColorChange:active,
+.buttonColorChange.btn:target,
+.buttonColorChange.btn:active:focus{
 	background-color: #FFC107;
 	transform: translateY(4px);
 }

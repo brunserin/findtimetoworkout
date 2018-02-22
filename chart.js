@@ -17,7 +17,7 @@ function drawChart() {
       titleTextStyle: { color: "black",
         fontSize: 20,
       },
-      pieHole: 0.5,
+      pieHole: 0.4,
       slices: {
             0: { color: '#FFC107'},
             1: { color: '#564F6F' }
@@ -36,7 +36,7 @@ function drawChart() {
       titleTextStyle: { color: "black",
         fontSize: 20,
       },
-      pieHole: 0.5,
+      pieHole: 0.4,
       slices: {
             0: { color: '#FFC107' },
             1: { color: '#564F6F' }
@@ -56,6 +56,8 @@ var form1 = document.getElementById('form1');
 var form2 = document.getElementById('form2');
 var bR = document.getElementById('bLogActivityR');
 var bS = document.getElementById('bLogActivityS');
+var bSC = document.getElementById('bSoloChallenge');
+var bGC = document.getElementById('bGroupChallenge');
 
 bR.onclick = function() {
     form1.style.display = "block";
@@ -64,6 +66,13 @@ bR.onclick = function() {
 bS.onclick = function() {
     form2.style.display = "block";
 }
+bSC.onclick = function() {
+    form3.style.display = "block";
+}
+bGC.onclick = function() {
+    form4.style.display = "block";
+}
+
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -73,4 +82,9 @@ window.onclick = function(event) {
     if (event.target == form2) {
         form2.style.display = "none";
     }
+    if(event.target == form3)
+        form3.style.display = "none";
+    if(event.target == form4)
+        form4.style.display = "none";
+
 }
