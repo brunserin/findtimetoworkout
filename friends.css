@@ -29,3 +29,20 @@
 	padding: 10px;
 	margin-top: 20px;
 }
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 12px;
+height: 8px;
+}
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 10px #564F6F;;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: #564F6E;;
+box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
