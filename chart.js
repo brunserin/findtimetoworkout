@@ -61,6 +61,7 @@ var bS = document.getElementById('bLogActivityS');
 var bSC = document.getElementById('bSoloChallenge');
 var bGC = document.getElementById('bGroupChallenge');
 var submitR = document.getElementById('submit-miles');
+var submitS = document.getElementById('submit-steps');
 
 bR.onclick = function() {
     form1.style.display = "block";
@@ -77,15 +78,53 @@ bGC.onclick = function() {
 }
 
 submitR.onclick = function() {
-	var numMiles = 5;//document.getElementById('num-miles').innerHTML;
+
+	var numMiles = document.getElementById('num-miles').value;
+  if (numMiles == "")
+  {
+    alert("Enter a value");
+    return;
+  }
+  numMiles = parseInt(numMiles);
+  if (numMiles <= 0 || numMiles == NaN){
+    alert("Invalid value");
+  }
 	if(numMiles > milesRemaining){
 		numMiles = milesRemaining;
 	}
-    milesCompleted += numMiles;
-    milesRemaining -= numMiles;
-    drawChart();
-    chart2.draw(data2, options2);
+  milesCompleted += numMiles;
+  milesRemaining -= numMiles;
+  document.getElementById('num-miles').value = "";
+  document.getElementById('num-miles').placeholder="5 (miles)"
+  form1.style.display = "none";
+  drawChart();
+  chart2.draw(data2, options2);
 }
+
+submitS.onclick = function() {
+
+	var numSteps = document.getElementById('num-steps').value;
+  if (numSteps == "")
+  {
+    alert("Enter a value");
+    return;
+  }
+  numSteps = parseInt(numSteps);
+  if (numSteps <= 0 || numSteps == NaN){
+    alert("Invalid value");
+  }
+	if(numSteps > stepsRemaining){
+		numSteps = stepsRemaining;
+	}
+  stepsCompleted += numSteps;
+  stepsRemaining -= numSteps;
+  document.getElementById('num-steps').value = "";
+  document.getElementById('num-steps').placeholder="1000 (steps)"
+  form2.style.display = "none";
+  drawChart();
+  chart1.draw(data1, options1);
+}
+
 
 
 // When the user clicks anywhere outside of the modal, close it
