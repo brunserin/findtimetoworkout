@@ -36,14 +36,14 @@ ast {
 }
 
 .submit-workout-button:hover {
-	background-color: #FFC107;
+	background-color: #ffcc00;
 	border-color: #564F6F;
 }
 
 .submit-workout-button:active,
 .submit-workout-button.btn:target,
 .submit-workout-button.btn:active:focus {
-	background-color: #FFC107;
+	background-color: #ffcc00;
 	transform: translateY(4px);
 }
 
