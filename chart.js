@@ -19,10 +19,10 @@ function drawChart() {
       titleTextStyle: { color: "black",
         fontSize: 20,
       },
-      pieHole: 0.4,
+      pieHole: 0.3,
       slices: {
             0: { color: '#ffcc00'},
-            1: { color: '#564F6F' }
+            1: { color: '#007acc' }
       },
       legend: {position: 'right', textStyle: {color: 'black', fontSize: 16}}
   };
@@ -38,10 +38,10 @@ function drawChart() {
       titleTextStyle: { color: "black",
         fontSize: 20,
       },
-      pieHole: 0.4,
+      pieHole: 0.3,
       slices: {
             0: { color: '#ffcc00' },
-            1: { color: '#564F6F' }
+            1: { color: '#007acc' }
       },
       legend: {position: 'right', textStyle: {color: 'black', fontSize: 16}}
   };
