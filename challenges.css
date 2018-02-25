@@ -1,11 +1,61 @@
 /* css specifically for content on challenges page */
 
+.name-chart-s {
+	position: fixed;
+	font-weight: bold;
+	margin-left: 25px;
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+.name-chart-r {
+	position: fixed;
+	font-weight: bold;
+	margin-left: 450px;
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.past-challenges {
+	position: fixed;
+	font-weight: bold;
+	margin-left: 875px;
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.horizontal-line {
+	position: fixed;
+	background-color: #564F6F;
+	margin-top: 60px;
+	margin-left: 25px;
+	height: 5px;
+	width: 400px;
+}
+
+.horizontal-line-r {
+	position: fixed;
+	background-color: #564F6F;
+	margin-top: 60px;
+	margin-left: 450px;
+	height: 5px;
+	width: 400px;
+}
+
+.horizontal-line-c {
+	position: fixed;
+	background-color: #564F6F;
+	margin-top: 60px;
+	margin-left: 875px;
+	height: 5px;
+	width: 400px;
+}
+
 .chart {
-	background-color: #e1deec;
 	border-radius: 5px;
 	padding-left: 10px;
 	margin-left: 15px;
-	width: 520px;
+	width: 400px;
 	height: 200px;
 }
 
@@ -27,19 +77,19 @@
 }
 
 .chart-wrapper-steps {
-	margin: 0 auto;
+	margin-left: -75px;
 	float: right;
 	display: block;
 	position: fixed;
-	top: 200px;
+	margin-top: 80px;
 }
 
 .chart-wrapper-running {
-	margin: 0 auto;
+	margin-left: 350px;
 	float: right;
 	display: block;
 	position: fixed;
-	top: 420px;
+	margin-top: 80px;
 }
 
 .bSubmitLogActivity {
@@ -56,8 +106,8 @@
 	margin-top: 110px;
 	margin-left: 20px;
 	position: fixed;
-	top: 204px;
-	left: 316px;
+	top: 150px;
+	left: 241px;
 }
 
 #bLogActivityR {
@@ -65,28 +115,38 @@
 	margin-top: 110px;
 	margin-left: 20px;
 	position: fixed;
-	top: 424px;
-	left: 316px;
+	top: 150px;
+	left: 665px;
 }
 
 #bSoloChallenge {
 	position: fixed;
 	border-radius: 3px;
 	color: white;
-	width: 500px;
+	width: 400px;
 	height: 40px;
-	margin-top: 25px;
+	margin-top: 350px;
 	margin-left: 25px;
 }
 
 #bGroupChallenge {
 	position: fixed;
-	top: 140px;
 	border-radius: 3px;
 	color: white;
-	width: 500px;
+	width: 400px;
 	height: 40px;
-	margin-left: 25px;
+	margin-left: 450px;
+	margin-top: 350px;
+}
+
+.completed-challenges {
+	background-color: white;
+	width: 400px;
+	margin-left: 875px;
+	height: 560px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 80px;
 }
 
 
@@ -113,122 +173,6 @@
 	/* Fallback color */
 	background-color: rgba(0, 0, 0, 0.4);
 	/* Black w/ opacity */
-}
-
-.form-content {
-	background-color: #fefefe;
-	margin: auto;
-	padding: 20px;
-	border: 1px solid #888;
-	border-radius: 3px;
-	width: 50%;
-}
-
-.logNumber {
-	margin: 0 auto;
-	display: flex;
-}
-
-img.profile-photo-md {
-	height: 45px;
-	width: 45px;
-	border-radius: 50%;
-}
-
-
-/*==================================================
-  Create Post Box CSS
-  ==================================================*/
-
-.create-post {
-	width: 100%;
-	min-height: 90px;
-	padding: 20px;
-	margin-bottom: 20px;
-	float: right;
-	position: fixed;
-	left: 550px;
-}
-
-.create-post .form-group {
-	margin-bottom: 0;
-	display: inline-flex;
-}
-
-#exampleTextarea {
-	margin-right: 5px;
-	max-height: 104px;
-}
-
-#publishIcons {
-	position: fixed;
-}
-
-.create-post .form-group .form-control {
-	border: 1px solid #ccc;
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-	height: 45px;
-}
-
-.create-post .form-group img.profile-photo-md {
-	margin-right: 10px;
-	vertical-align: top;
-}
-
-.create-post .tools {
-	padding: 8px 0 10px;
-}
-
-.create-post .tools ul.publishing-tools {
-	display: inline-block;
-	text-align: left;
-	margin: 0;
-	position: fixed;
-	left: 892px;
-	margin-right: 5px;
-	margin-left: 5px;
-	/*padding:5px 0;*/
-}
-
-.create-post .tools ul.publishing-tools li a {
-	color: #6d6e71;
-	font-size: 18px;
-}
-
-.create-post .tools ul.publishing-tools li a:hover {
-	color: #27aae1;
-}
-
-.list-inline>li {
-	display: inline-block;
-	padding-right: 5px;
-	padding-left: 5px;
-}
-
-#bPublish {
-	position: fixed;
-	top: 80px;
-	left: 1000px;
-}
-
-#newsFeed {
-	background-color: white;
-	height: 420px;
-	position: fixed;
-	left: 570px;
-	top: 200px;
-	list-style: none;
-	overflow-y: scroll;
-	margin-bottom: 20px;
-}
-
-.newsFeedListItem {
-	padding: 20px;
-	border-color: #564F6F;
-	border-width: 3px;
-	width: 710px;
-	height: 60px;
-	background-color: white;
 }
 
 
