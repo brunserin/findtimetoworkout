@@ -1,4 +1,5 @@
 /* css specifically for content on calendar page */
+
 ast {
 	color: red;
 }
@@ -30,18 +31,18 @@ ast {
 	float: right;
 }
 
-.submit-workout-button{
+.submit-workout-button {
 	background-color: #564F6F;
 }
 
-.submit-workout-button:hover{
+.submit-workout-button:hover {
 	background-color: #FFC107;
 	border-color: #564F6F;
 }
 
 .submit-workout-button:active,
 .submit-workout-button.btn:target,
-.submit-workout-button.btn:active:focus{
+.submit-workout-button.btn:active:focus {
 	background-color: #FFC107;
 	transform: translateY(4px);
 }
