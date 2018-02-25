@@ -24,7 +24,7 @@
 }
 
 .friends-list-wrapper {
-	background-color:  #e0e0eb;
+	background-color:  #c0d5e3;
 	width: 210px;
 	margin-left: 20px;
 	height: 560px;
@@ -134,10 +134,10 @@ img.profile-photo-md {
 	margin: 15px;
 	padding: 5px;
 	border-radius: 3px;
-	border-color: #007acc;
+	border-color: #c0d5e3;
 	border-width: 3px;
 	height: 45px;
-	background-color: #e0e0eb;
+	background-color: #c0d5e3;
 	font-size: 25px;
 }
 
@@ -158,6 +158,6 @@ img.profile-photo-md {
 
 ::-webkit-scrollbar-thumb {
 	border-radius: 10px;
-	background: #564F6E;
+	background: #007acc;
 	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
