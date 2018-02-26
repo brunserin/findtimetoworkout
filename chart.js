@@ -4,6 +4,7 @@ var stepsRemaining = totalSteps - stepsCompleted;
 var milesCompleted = 12;
 var milesRemaining = 8;
 var chart2;
+var chart1
 
 google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(drawChart);
@@ -46,7 +47,7 @@ function drawChart() {
       legend: {position: 'right', textStyle: {color: 'black', fontSize: 16}}
   };
 
-  var chart1 = new google.visualization.PieChart(document.getElementById('donutchart1'));
+  chart1 = new google.visualization.PieChart(document.getElementById('donutchart1'));
   chart2 = new google.visualization.PieChart(document.getElementById('donutchart2'));
 
 
@@ -62,6 +63,9 @@ var bSC = document.getElementById('bSoloChallenge');
 var bGC = document.getElementById('bGroupChallenge');
 var submitR = document.getElementById('submit-miles');
 var submitS = document.getElementById('submit-steps');
+var bSoloChallenge = document.getElementById('bSoloChallenge');
+var bGroupChallenge = document.getElementById('bGroupChallenge');
+
 
 bR.onclick = function() {
     form1.style.display = "block";
@@ -125,7 +129,17 @@ submitS.onclick = function() {
   chart1.draw(data1, options1);
 }
 
+bSoloChallenge.onclick = function() {
+alert("Enrolled in max number of solo challenges already");
+form3.style.display = "none";
+return;
+}
 
+bGroupChallenge.onclick = function() {
+alert("Enrolled in max number of group challenges already");
+form4.style.display = "none";
+return;
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {

@@ -96,16 +96,17 @@
 .form-content{
 	background-color: white;
 	margin: 0 auto;
-	width: 50%;
-	height: 40%;
+	width: 40%;
+	height: 30%;
 }
 
 /*input box to enter data for challenge activities*/
 /*should be centered and above submit button*/
 .logNumber{
-	margin-left: 238px;
-	margin-top: 50px;
+	text-align: center;
+	padding-top: 30px;
 }
+
 
 .bSubmitLogActivity {
 	margin: 0 auto;
