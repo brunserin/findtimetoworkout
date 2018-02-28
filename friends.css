@@ -71,12 +71,26 @@ img.profile-photo-md {
 .create-post .form-group {
 	margin-bottom: 0;
 	display: inline-flex;
+	width: 550px;
+}
+
+.row {
+	width: 800px;
+}
+
+.column {
+	width: 565px;
+	padding-left: 12px;
+}
+
+.toolsAndButtonRow {
+	width: 200px;
 }
 
 #exampleTextarea {
 	margin-right: 5px;
 	max-height: 104px;
-	width: 250px; 
+	width: 530px;
 }
 
 
@@ -126,6 +140,7 @@ img.profile-photo-md {
 
 #newsFeed {
 	height: 420px;
+	width: 777px;
 	list-style: none;
 	overflow-y: scroll;
 	margin-bottom: 20px;
@@ -142,7 +157,22 @@ img.profile-photo-md {
 	font-size: 25px;
 }
 
+.buttonColorChange {
+	border-color: #007acc;
+	background-color: #007acc;
+}
 
+.buttonColorChange:hover {
+	background-color: #ffcc00;
+	border-color: #007acc;
+}
+
+.buttonColorChange:active,
+.buttonColorChange.btn:target,
+.buttonColorChange.btn:active:focus {
+	background-color: #ffcc00;
+	transform: translateY(4px);
+}
 
 
 /* Scrollbar styles */
