@@ -76,6 +76,7 @@ img.profile-photo-md {
 #exampleTextarea {
 	margin-right: 5px;
 	max-height: 104px;
+	width: 250px; 
 }
 
 
@@ -119,7 +120,7 @@ img.profile-photo-md {
 
 .newsfeed-header {
 	margin-left: 20px;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: bold;
 }
 
