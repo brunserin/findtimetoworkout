@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Profile</title>
+  <link rel="shortcut icon" type="image/x-icon" href="running_icon.png" />
+
+  <!-- script library -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  <!-- stylesheet library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+  <!-- local stylesheets -->
+  <link rel="stylesheet" type="text/css" href="FTTW.css">
+  <link rel="stylesheet" type="text/css" href="profile.css" />
+
+</head>
+
+<body>
+  <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
+      <a class="navbar-brand" href="calendar.HTML">Find Time to Work Out</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+              <a class="nav-item nav-link" href="calendar.HTML"><i class="fas fa-calendar-alt"></i> Calendar</a>
+              <a class="nav-item nav-link" href="challenges.HTML"><i class="fas fa-trophy"></i> Challenges</a>
+              <a class="nav-item nav-link active" href="friends.HTML"><i class="fas fa-users"></i> Friends <span class="sr-only">(current)</span></a>
+          </div>
+      </div>
+  </nav>
+
+  <!-- button to return to friends page -->
+  <div>
+    <a href="friends.html"> <img src="back-button.png" id="backButton"> </a>
+  </div>
+<div id="profileContent">
+  <div>
+    <img src="profile_picture.png" id="profilePicture">
+  </div>
+
+  <div id="profileOptions">
+    <h><b>Anna</b></h> <br>
+    <p>View calendar</p>
+    <p>Invite to workout</p>
+    <p>See progress</p>
+    <p>Start a group challenge</p>
+    <p>Delete friend</p>
+  </div>
+</div>
+
+
+
+<script src="profile.js"></script>
+</body>
+
+</html>
