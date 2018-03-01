@@ -67,10 +67,11 @@ function getUserInput(){
   var startTime = document.querySelector("#start").value;
   var endTime = document.querySelector("#end").value;
   var eventDesc = document.querySelector("#event").value;
+  //var addPeople = document.querySelector("#attendees").value;
 
   // check input values, they should not be empty
   if (date=="" || startTime=="" || endTime=="" || eventDesc==""){
-    alert("All your input fields should have a meaningful value.");
+    alert("All your required input fields should have a meaningful value.");
     return
   } else {
     alert("Congratulations, you have successfully scheduled a workout.");
@@ -90,12 +91,16 @@ function createEvent(eventData) {
         },
         "end": {
           "dateTime": new Date(eventData.date + " " + eventData.endTime).toISOString()
-          }
+        },
+        "attendees": [
+          {'email': '27andersonra@gmail.com'}
+        ]
         };
     // create the request
     var request = gapi.client.calendar.events.insert({
       'calendarId': 'primary',
       'resource': resource
+      //'colorID': red
     });
 
     // execute the request and do something with response
