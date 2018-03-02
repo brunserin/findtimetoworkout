@@ -4,6 +4,11 @@ var apiKey = "AIzaSyDwr_JyFHv3Sv5CxGFgQJvb9iYLyLmGGMI";
 var scopes = 'https://www.googleapis.com/auth/calendar';
 
 
+var workoutForm = document.getElementById('workoutForm');
+var bW = document.getElementById('addToCalendar');
+
+
+
 /* Function invoked when the client javascript library is loaded */
 function handleClientLoad() {
   console.log("Inside handleClientLoad ...");
@@ -80,6 +85,18 @@ function getUserInput(){
   }
 }
 
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == workoutForm) {
+        workoutForm.style.display = "none";
+    }
+}
+
+bW.onclick = function() {
+    workoutForm.style.display = "block";
+}
 
 // Make an API call to create an event.  Give feedback to user.
 function createEvent(eventData) {

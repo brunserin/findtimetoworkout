@@ -2,75 +2,76 @@
 <html lang="en">
 
 <head>
-    <title>Calendar</title>
-    <link rel="shortcut icon" type="image/x-icon" href="running_icon.png" />
+  <title>Calendar</title>
+  <link rel="shortcut icon" type="image/x-icon" href="running_icon.png" />
 
-    <!-- script library -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!-- script library -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-    <!-- stylesheet library -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+  <!-- stylesheet library -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
 
-    <!-- local stylesheets -->
-    <link rel="stylesheet" type="text/css" href="FTTW.css">
-    <link rel="stylesheet" type="text/css" href="calendar.css" />
+  <!-- local stylesheets -->
+  <link rel="stylesheet" type="text/css" href="FTTW.css">
+  <link rel="stylesheet" type="text/css" href="calendar.css" />
 
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
-        <a class="navbar-brand" href="calendar.HTML">Find Time to Work Out</a>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="calendar.HTML"><i class="fas fa-calendar-alt"></i> Calendar <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="challenges.HTML"><i class="fas fa-trophy"></i> Challenges</a>
-                <a class="nav-item nav-link" href="friends.HTML"><i class="fas fa-users"></i> Friends</a>
-            </div>
-        </div>
-    </nav>
-
-    <div class="calendar-form-wrapper">
-        <iframe src="https://calendar.google.com/calendar/b/2/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=findtimetoworkout%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FChicago" class="calendar-box" width="600" height="500" frameborder="" scrolling="no"></iframe>
-
-        <div class="add-workout-form" id="div-workout-form">
-            <div class="schedule-workout-text">Schedule a Workout</div>
-            <div id="content">
-                <!-- <p><label>Select a date: <input type="date" id="date"></label></p> -->
-                <div class="form-line">
-                    Date
-                    <ast>*</ast>
-                    <input class="form-field" type="date" id="date">
-                </div>
-                <div class="form-line">
-                    Start Time
-                    <ast>*</ast>
-                    <input class="form-field" type="time" id="start">
-                </div>
-                <div class="form-line">
-                    End Time
-                    <ast>*</ast>
-                    <input class="form-field" type="time" id="end">
-                </div>
-                <div class="form-line">
-                    Workout Description
-                    <ast>*</ast>
-                    <input class="form-field" type="text" id="event" size="40" placeholder="E.g. Spinning at Spac">
-                </div>
-                <div class="form-line">
-                    Add Friends
-                    <input class="form-field" type="text" id="addPeople" size="40" placeholder="Friend Name">
-                </div>
-                <p>
-                    <button class="btn btn-primary submit-workout-button" id="authorize-button" style="visibility: hidden">Login & Authorize</button>
-                </p>
-                <button class="btn btn-primary submit-workout-button" type="submit" id="addToCalendar"><i class="fas fa-plus"></i> Add Workout to Google Calendar</button>
-            </div>
-            <!--Add a button for the user to click to initiate auth sequence -->
-            <script src="calendar_ex.js"></script>
-            <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
-        </div>
+  <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
+    <a class="navbar-brand" href="calendar.HTML">Find Time to Work Out</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="calendar.HTML"><i class="fas fa-calendar-alt"></i> Calendar <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="challenges.HTML"><i class="fas fa-trophy"></i> Challenges</a>
+        <a class="nav-item nav-link" href="friends.HTML"><i class="fas fa-users"></i> Friends</a>
+      </div>
     </div>
+  </nav>
+
+  <form id="workoutForm" class="form-page">
+    <div class="workoutFormContent">
+      <div class="form-line row">
+        <label class="col-sm-2 col-form-label">Date</label>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="inputDate">
+        </div>
+      </div>
+      <div class="form-line row">
+        <label class="col-sm-2 col-form-label">Start Time</label>
+        <div class="col-sm-10">
+          <input type="time" class="form-control" id="inputStartTime">
+        </div>
+      </div>
+      <div class="form-line row">
+        <label class="col-sm-2 col-form-label">End Time</label>
+        <div class="col-sm-10">
+          <input type="time" class="form-control" id="inputEndTime">
+        </div>
+      </div>
+      <div class="form-line row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+  <button class="create-workout-button" type="submit" id="addToCalendar"><i class="fas fa-plus"></i></button>
+
+
+
+  <div class="calendar-form-wrapper">
+    <iframe src="https://calendar.google.com/calendar/b/2/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=findtimetoworkout%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FChicago" class="calendar-box" width="900" height="650" frameborder="" scrolling="no"></iframe>
+
+    <!--Add a button for the user to click to initiate auth sequence -->
+    <script src="calendar_ex.js"></script>
+    <script src="bootstrap-datepicker.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+  </div>
+
 
 </body>
 
