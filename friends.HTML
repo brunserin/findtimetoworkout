@@ -37,47 +37,27 @@
         <nav>
             <div class="friends-header">Best Friends</div>
             <ul class="friends-list best-friends">
-                <li><a href="profile.html">Anna Kendrick</a></li>
-                <li>Kendrick Lamar</li>
-                <li>Khloe Kardashian</li>
+                <li class="friend-list-item" onclick="location.href='profile.html';"><i class="fas fa-user"></i>  Anna Kendrick</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Kendrick Lamar</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Khloe Kardashian</li>
             </ul>
         </nav>
 
         <nav>
             <div class="friends-header">All Friends</div>
             <ul class="friends-list all-friends" style="overflow-y: scroll;">
-                <li>Cardi B</li>
-                <li>Caroline Carter</li>
-                <li>Jack Darn</li>
-                <li>Carrie Frank</li>
-                <li>Katie George</li>
-                <li>Will Hunting</li>
-                <li>Hugh Jane</li>
-                <li>Neivelle Longbottom</li>
-                <li>Marry Mist</li>
-                <li>Kanye West</li>
-                <li>Michelle Williams</li>
-                <li>Julia Wilkins</li>
-                <li>Lena Goren</li>
-                <li>Talia Wilmert</li>
-                <li>Grace Young</li>
-                <li>Kylie Chesner</li>
-                <li>Corinne Burger</li>
-                <li>Rachel Anderson</li>
-                <li>Erin Bruns</li>
-                <li>Hindeke Tewodros</li>
-                <li>Grace Goulson</li>
-                <li>Sydney Stelzer</li>
-                <li>Abby Mathier</li>
-                <li>Morgan Walker</li>
-                <li>Ben Richards</li>
-                <li>Jeff Holm</li>
-                <li>Kate Smith</li>
-                <li>Dick John</li>
-                <li>Long John</li>
-                <li>Ian Coach</li>
-                <li>Abby Shure</li>
-                <li>Cindy Mei</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Cardi B</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Marry Mist</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Kanye West</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Michelle Williams</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Julia Wilkins</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Lena Goren</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Talia Wilmert</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Grace Young</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Kylie Chesner</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Erin Bruns</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Rachel Anderson</li>
+                <li class="friend-list-item"><i class="fas fa-user"></i>   Corinne Burger</li>
             </ul>
         </nav>
     </div>
@@ -103,11 +83,6 @@
             <li class="newsFeedListItem"><i class="fas fa-user"></i> feed item 3</li>
             <li class="newsFeedListItem"><i class="fas fa-user"></i> feed item 4</li>
             <li class="newsFeedListItem"><i class="fas fa-user"></i> feed item 5</li>
-            <li class="newsFeedListItem"><i class="fas fa-user"></i> feed item 6</li>
-            <li class="newsFeedListItem"><i class="fas fa-user"></i> feed item 7</li>
-            <li class="newsFeedListItem"><i class="fas fa-user"></i> feed item 8</li>
-            <li class="newsFeedListItem"><i class="fas fa-user"></i> feed item 9</li>
-            <li class="newsFeedListItem"><i class="fas fa-user"></i> feed item 10</li>
         </div>
         <div class="create-post">
             <div class="row">
@@ -115,7 +90,7 @@
                     <div class="row">
                         <div class="column">
                             <div class="form-group">
-                                <img src="http://cdns2.freepik.com/free-photo/super-simple-avatar_318-1018.jpg" alt="" class="profile-photo-md">
+                                <i id="userIcon" class="fas fa-user"> </i>
                                 <textarea name="texts" id="exampleTextarea" cols="30" rows="2" class="form-control" placeholder="Share Progress"></textarea>
                             </div>
                         </div>

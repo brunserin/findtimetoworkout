@@ -3,6 +3,34 @@
 	display: inline-block;
 }
 
+.friend-list-item{
+	border-bottom: 1px solid #007acc;
+	width: inherit;
+	display : relative;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 5px;
+	margin-left: 0px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.friend-list-item:link{
+	text-decoration: none;
+}
+.friend-list-item:hover{
+	text-decoration: none;
+}
+.friend-list-item:active{
+	text-decoration: none;
+}
+.friend-list-item:visited{
+	text-decoration: none;
+}
+
+
+
+
 .friends-list {
 	overflow: hidden;
 	list-style: none;
@@ -10,11 +38,11 @@
 }
 
 .best-friends {
-	height: 73px;
+	height: 120px;
 }
 
 .all-friends {
-	height: 400px;
+	height: 340px;
 	overflow-y: scroll;
 }
 
@@ -51,6 +79,12 @@ img.profile-photo-md {
 	height: 45px;
 	width: 45px;
 	border-radius: 50%;
+}
+
+userIcon{
+	height: 45px;
+	width: 45px;
+	font-size: 50px;
 }
 
 
@@ -172,6 +206,11 @@ img.profile-photo-md {
 .buttonColorChange.btn:active:focus {
 	background-color: #ffcc00;
 	transform: translateY(4px);
+}
+
+.friend-list-item:hover {
+	background-color: #98bad1;
+	border-color: #007acc;
 }
 
 
