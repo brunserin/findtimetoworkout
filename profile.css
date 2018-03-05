@@ -1,3 +1,4 @@
+/* css specifically for content on profile page */
 
 #backButton{
   margin: 25px;
@@ -43,4 +44,9 @@ margin-left: 25px;
 	width: 95%;
   display: block;
   margin-top: 245px;
+}
+
+.buttonColorChange {
+  width: 225px;
+  text-align: left;
 }

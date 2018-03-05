@@ -14,6 +14,7 @@
 
   <!-- local stylesheets -->
   <link rel="stylesheet" type="text/css" href="FTTW.css">
+  <link rel="stylesheet" type="text/css" href="calendar.css">
   <link rel="stylesheet" type="text/css" href="profile.css" />
 
 </head>
@@ -33,23 +34,62 @@
       </div>
   </nav>
 
+  <form id="workoutForm" class="form-page">
+    <div class="workoutFormContent">
+      <div class="form-line row">
+        <label class="col-sm-2 col-form-label">Date</label>
+        <div class="col-sm-10">
+          <input type="date" class="form-control" id="inputDate">
+        </div>
+      </div>
+      <div class="form-line row">
+        <label class="col-sm-2 col-form-label">Start Time</label>
+        <div class="col-sm-10">
+          <input type="time" class="form-control" id="inputStartTime">
+        </div>
+      </div>
+      <div class="form-line row">
+        <label class="col-sm-2 col-form-label">End Time</label>
+        <div class="col-sm-10">
+          <input type="time" class="form-control" id="inputEndTime">
+        </div>
+      </div>
+      <div class="form-line row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
 <div id="profileContent">
   <div>
     <img src="profile_picture.png" id="profilePicture">
   </div>
   <div id="userName"><b>Anna Kendrick</b></div>
   <div id="profileOptions">
-    <p>Invite to workout</p>
-    <p>Start a group challenge</p>
-    <p>Delete friend</p>
+    <p>
+      <button id="addToCalendar" class="btn btn-primary buttonColorChange" type="submit"><i class="fas fa-plus"></i> Invite to Workout </button>
+    </p>
+    <p>
+     <button id="GroupChallengeOnProfile" class="btn btn-primary buttonColorChange" type="submit"><i class="fas fa-plus"></i> Invite to Group Challenge </button>
+    </p>
+    <p>
+      <button id="DeleteFriend" class="btn btn-primary buttonColorChange" type="submit"><i class="fas fa-minus"></i> Delete Friend</button>
+    </p>
   </div>
 </div>
 <div class="horizontal-line"></div>
 
 
-
+<form id="formProf" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
+  <div class="form-content">
+    <p> Yes </p>
+  </div>
+ </form>
 
 <script src="profile.js"></script>
+<script src="calendar_ex.js"></script>
 </body>
 
 </html>

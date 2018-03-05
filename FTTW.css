@@ -6,3 +6,20 @@
 body {
 	background-color: white;
 }
+
+.buttonColorChange {
+	border-color: #007acc;
+	background-color: #007acc;
+}
+
+.buttonColorChange:hover {
+	background-color: #ffcc00;
+	border-color: #007acc;
+}
+
+.buttonColorChange:active,
+.buttonColorChange.btn:target,
+.buttonColorChange.btn:active:focus {
+	background-color: #ffcc00;
+	transform: translateY(4px);
+}
