@@ -5,7 +5,6 @@
 
 .friend-list-item{
 	border-bottom: 1px solid #007acc;
-	width: inherit;
 	display : relative;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -15,7 +14,7 @@
 	cursor: pointer;
 }
 
-.friend-list-item:link{
+/*.friend-list-item:link{
 	text-decoration: none;
 }
 .friend-list-item:hover{
@@ -26,7 +25,7 @@
 }
 .friend-list-item:visited{
 	text-decoration: none;
-}
+}*/
 
 
 
@@ -174,7 +173,7 @@ userIcon{
 
 #newsFeed {
 	height: 420px;
-	width: 777px;
+	width: 500px;
 	list-style: none;
 	overflow-y: scroll;
 	margin-bottom: 20px;
@@ -186,10 +185,39 @@ userIcon{
 	border-radius: 3px;
 	border-color: #c0d5e3;
 	border-width: 3px;
-	height: 45px;
+	min-height: 45px;
 	background-color: #c0d5e3;
 	font-size: 25px;
 }
+
+.news-feed-image {
+	height: 458px;
+	width: 458px;
+	margin-left: -5px;
+}
+
+.newsFeed-friend-name,
+.newsFeed-friend-name:link,
+.newsFeed-friend-name:hover,
+.newsFeed-friend-name:active,
+.newsFeed-friend-name:visited {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+/*.friend-list-item:link{
+	text-decoration: none;
+}
+.friend-list-item:hover{
+	text-decoration: none;
+}
+.friend-list-item:active{
+	text-decoration: none;
+}
+.friend-list-item:visited{
+	text-decoration: none;
+}*/
 
 .buttonColorChange {
 	border-color: #007acc;
