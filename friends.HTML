@@ -11,6 +11,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" type="text/css" href="FTTW.css">
     <link rel="stylesheet" type="text/css" href="friends.css" />
+    <script src="friends.js"></script>
 </head>
 
 <body>
@@ -74,17 +75,22 @@
         </div>
         <div id="newsFeed" style="overflow-y: scroll;">
 
-            <li class="newsFeedListItem"><i class="fas fa-user"></i> feed item 1</li>
+            <li class="newsFeedListItem">
+                <i class="fas fa-trophy"></i>  <a href="profile.html" class="newsFeed-friend-name">Anna Kendrick</a> completed her step challenge of 10,000 steps this week!
+                <div><img id="news-feed-image-steps" src="steps.jpeg"></div>
+                <div id="newsFeedListItem1" onclick="increment1" class="like-bar"><div class="fas fa-thumbs-up"></div> 13</div>
+                <br>
+
+            </li>
 
             <li class="newsFeedListItem">
                 <i class="fas fa-images"></i>  <a href="profile.html" class="newsFeed-friend-name">Anna Kendrick</a> added a new photo.
                 <div><img class="news-feed-image" src="marathon-finish.jpg"></div>
+                <div id="newsFeedListItem2" class="like-bar"><div class="fas fa-thumbs-up"></div> 5</div>
                 "I ran my first marathon!"
+
             </li>
 
-            <li class="newsFeedListItem"><i class="fas fa-user"></i> feed item 3</li>
-            <li class="newsFeedListItem"><i class="fas fa-user"></i> feed item 4</li>
-            <li class="newsFeedListItem"><i class="fas fa-user"></i> feed item 5</li>
         </div>
         <div class="create-post">
             <div class="row">

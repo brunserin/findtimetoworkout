@@ -12,6 +12,7 @@
 	margin-left: 0px;
 	text-decoration: none;
 	cursor: pointer;
+	font-size: 18px;
 }
 
 /*.friend-list-item:link{
@@ -51,7 +52,7 @@
 }
 
 .friends-list-wrapper {
-	background-color:  #eff0f1;
+	background-color:  #c0d5e3;
 	width: 210px;
 	margin-left: 20px;
 	height: 560px;
@@ -86,6 +87,13 @@ userIcon{
 	font-size: 50px;
 }
 
+.like-bar{
+	text-align: right;
+	align-content: right;
+	float: right;
+	margin: 5px;
+}
+
 
 /*==================================================
   Create Post Box CSS
@@ -104,6 +112,7 @@ userIcon{
 .create-post .form-group {
 	margin-bottom: 0;
 	display: inline-flex;
+	width: 466px;
 }
 
 .row {
@@ -111,6 +120,7 @@ userIcon{
 }
 
 .column {
+	width: 314px;
 	padding-left: 12px;
 }
 
@@ -121,7 +131,7 @@ userIcon{
 #exampleTextarea {
 	margin-right: 5px;
 	max-height: 104px;
-	width: 290px;
+	width: 300px;
 }
 
 
@@ -181,15 +191,21 @@ userIcon{
 	margin: 15px;
 	padding: 5px;
 	border-radius: 3px;
-	border-color: #eff0f1;
+	border-color: #c0d5e3;
 	border-width: 3px;
 	min-height: 45px;
-	background-color: #eff0f1;
-	font-size: 25px;
+	background-color: #c0d5e3;
+	font-size: 18px;
 }
 
 .news-feed-image {
 	height: 458px;
+	width: 458px;
+	margin-left: -5px;
+}
+
+#news-feed-image-steps {
+	height: 320px;
 	width: 458px;
 	margin-left: -5px;
 }
@@ -217,6 +233,22 @@ userIcon{
 	text-decoration: none;
 }*/
 
+.buttonColorChange {
+	border-color: #007acc;
+	background-color: #007acc;
+}
+
+.buttonColorChange:hover {
+	background-color: #ffcc00;
+	border-color: #007acc;
+}
+
+.buttonColorChange:active,
+.buttonColorChange.btn:target,
+.buttonColorChange.btn:active:focus {
+	background-color: #ffcc00;
+	transform: translateY(4px);
+}
 
 .friend-list-item:hover {
 	background-color: #98bad1;
