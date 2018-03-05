@@ -104,7 +104,6 @@ userIcon{
 .create-post .form-group {
 	margin-bottom: 0;
 	display: inline-flex;
-	width: 550px;
 }
 
 .row {
@@ -112,7 +111,6 @@ userIcon{
 }
 
 .column {
-	width: 565px;
 	padding-left: 12px;
 }
 
@@ -123,7 +121,7 @@ userIcon{
 #exampleTextarea {
 	margin-right: 5px;
 	max-height: 104px;
-	width: 530px;
+	width: 290px;
 }
 
 
