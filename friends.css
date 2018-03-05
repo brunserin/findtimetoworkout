@@ -5,7 +5,6 @@
 
 .friend-list-item{
 	border-bottom: 1px solid #007acc;
-	width: inherit;
 	display : relative;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -15,7 +14,7 @@
 	cursor: pointer;
 }
 
-.friend-list-item:link{
+/*.friend-list-item:link{
 	text-decoration: none;
 }
 .friend-list-item:hover{
@@ -26,7 +25,7 @@
 }
 .friend-list-item:visited{
 	text-decoration: none;
-}
+}*/
 
 
 
@@ -105,7 +104,6 @@ userIcon{
 .create-post .form-group {
 	margin-bottom: 0;
 	display: inline-flex;
-	width: 550px;
 }
 
 .row {
@@ -113,7 +111,6 @@ userIcon{
 }
 
 .column {
-	width: 565px;
 	padding-left: 12px;
 }
 
@@ -124,7 +121,7 @@ userIcon{
 #exampleTextarea {
 	margin-right: 5px;
 	max-height: 104px;
-	width: 530px;
+	width: 290px;
 }
 
 
@@ -174,7 +171,7 @@ userIcon{
 
 #newsFeed {
 	height: 420px;
-	width: 777px;
+	width: 500px;
 	list-style: none;
 	overflow-y: scroll;
 	margin-bottom: 20px;
@@ -186,7 +183,7 @@ userIcon{
 	border-radius: 3px;
 	border-color: #c0d5e3;
 	border-width: 3px;
-	height: 45px;
+	min-height: 45px;
 	background-color: #c0d5e3;
 	font-size: 25px;
 }
