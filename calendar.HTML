@@ -31,7 +31,7 @@
   </nav>
 
   <form id="workoutForm" class="form-page">
-    <div class="workoutFormContent">
+    <div id="workoutFormContent">
       <div class="form-line row">
         <label class="col-sm-2 col-form-label">Date</label>
         <div class="col-sm-10">
@@ -41,7 +41,7 @@
       <div class="form-line row">
         <label class="col-sm-2 col-form-label">Start Time</label>
         <div class="col-sm-10">
-          <input type="time" class="form-control" id="inputStartTime">
+          <input type="time" class="form-control" placeholder="hh:mm AM" id="inputStartTime">
         </div>
       </div>
       <div class="form-line row">
@@ -58,21 +58,14 @@
     </div>
   </form>
 
+  <button class="btn btn-primary create-workout-button" type="submit" id="addToCalendar"><i class="fas fa-plus"></i></button>
 
-  <button class="create-workout-button" type="submit" id="addToCalendar"><i class="fas fa-plus"></i></button>
-
-
-
-  <div class="calendar-form-wrapper">
-    <iframe src="https://calendar.google.com/calendar/b/2/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=findtimetoworkout%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FChicago" class="calendar-box" width="900" height="650" frameborder="" scrolling="no"></iframe>
+  <p align="center"><iframe src="https://calendar.google.com/calendar/b/2/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=findtimetoworkout%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FChicago" class="calendar-box" width="900" height="650" frameborder="" scrolling="no"></iframe></p>
 
     <!--Add a button for the user to click to initiate auth sequence -->
     <script src="calendar_ex.js"></script>
     <script src="bootstrap-datepicker.js"></script>
     <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
-  </div>
-
-
 </body>
 
 </html>

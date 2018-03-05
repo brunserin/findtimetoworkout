@@ -4,19 +4,14 @@ ast {
 	color: red;
 }
 
-.calendar-form-wrapper {
-	display: inline-block;
-	padding-bottom: 5px;
-	padding-top: 15px;
-	margin-left: 210px;
-}
 
 .calendar-box {
-	margin-left: 20px;
-	float: left;
+	display: block;
+	width: 900px;
 	background-color: white;
 	padding: 5px;
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .add-workout-form {
@@ -38,6 +33,7 @@ ast {
 	width: 50px;
 	height: 50px;
 	border-radius: 150px;
+	border-color: #007acc;
 	margin: 20px;
 }
 
@@ -76,11 +72,10 @@ ast {
 
 #workoutFormContent{
 	background-color: white;
-	display: inline-block;
+	display: block;
 	margin: 0 auto;
-	max-width: 60%;
-	max-height: 80%;
-	margin-left: 210px;
+  width: 900px;
+	height: 250px;
 	margin-top: -30px;
 	padding: 20px;
 }
@@ -113,4 +108,53 @@ ast {
 	/* Fallback color */
 	background-color: rgba(0, 0, 0, 0.4);
 	/* Black w/ opacity */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  99% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+
+
+
+[type="time"] {
+  background:#fff url(https://cdn2.iconfinder.com/data/icons/pittogrammi/142/10-16.png)  99% 50% no-repeat ;
+}
+[type="time"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+
+
+/* custom styles */
+label {
+  display: block;
+}
+input {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 3px 5px;
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
 }
