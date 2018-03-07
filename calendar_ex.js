@@ -4,11 +4,9 @@ var apiKey = "AIzaSyDwr_JyFHv3Sv5CxGFgQJvb9iYLyLmGGMI";
 var scopes = 'https://www.googleapis.com/auth/calendar';
 
 
-
-
 var workoutForm = document.getElementById('workoutForm');
 var bNewWorkout = document.getElementById('new-workout-button');
-var bSubmitWorkout = document.getElementById('bSubmitWorkout');
+var bSubmit = document.getElementById('bSubmit');
 
 
 /* Function invoked when the client javascript library is loaded */
@@ -31,10 +29,10 @@ function handleAuthResult(authResult) {
     console.log("Inside handleAuthResult ...");
     authData = authResult;
     var authorizeButton = document.getElementById('bAuth');
-    var submitButton = document.getElementById('bSubmitWorkout');
+    //var submitButton = document.getElementById('bSubmit');
     if (authResult && !authResult.error) {
           authorizeButton.style.visibility = 'hidden';
-          submitButton.style.visibility = 'visible';
+          bSubmit.style.visibility = 'visible';
           //load the calendar client library
           gapi.client.load('calendar', 'v3', function(){
             console.log("Calendar library loaded.");
@@ -48,6 +46,7 @@ function handleAuthResult(authResult) {
 
 /* Event handler that deals with clicking on the Authorize button.*/
 function handleAuthClick(event) {
+  console.log('entering auth click');
     gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: false},
                         handleAuthResult);
     return false;
@@ -117,19 +116,7 @@ bNewWorkout.onclick = function() {
     workoutForm.style.display = "block";
 }
 
-bSubmitWorkout.onclick = function() {
-  console.log("submit button");
-  workoutForm.style.display = "none";
-  console.log("new workout submitted ");
-  var userChoices = getUserInput();
-  console.log(userChoices);
-  if (userChoices)
-    createEvent(userChoices);
-}
-
-
-function submitWorkoutFunc() {
-  console.log("submit button");
+bSubmit.onclick = function() {
   workoutForm.style.display = "none";
   console.log("new workout submitted ");
   var userChoices = getUserInput();
