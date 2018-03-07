@@ -4,9 +4,11 @@ var apiKey = "AIzaSyDwr_JyFHv3Sv5CxGFgQJvb9iYLyLmGGMI";
 var scopes = 'https://www.googleapis.com/auth/calendar';
 
 
-var workoutForm = document.getElementById('workoutForm');
-var bW = document.getElementById('addToCalendar');
 
+
+var workoutForm = document.getElementById('workoutForm');
+var bNewWorkout = document.getElementById('new-workout-button');
+var bSubmitWorkout = document.getElementById('bSubmitWorkout');
 
 
 /* Function invoked when the client javascript library is loaded */
@@ -28,11 +30,11 @@ var authData;
 function handleAuthResult(authResult) {
     console.log("Inside handleAuthResult ...");
     authData = authResult;
-    var authorizeButton = document.getElementById('authorize-button');
-    var addButton = document.getElementById('addToCalendar');
+    var authorizeButton = document.getElementById('bAuth');
+    var submitButton = document.getElementById('bSubmitWorkout');
     if (authResult && !authResult.error) {
           authorizeButton.style.visibility = 'hidden';
-          addButton.style.visibility = 'visible';
+          submitButton.style.visibility = 'visible';
           //load the calendar client library
           gapi.client.load('calendar', 'v3', function(){
             console.log("Calendar library loaded.");
@@ -56,27 +58,18 @@ function handleAuthClick(event) {
 /* Start of PART 2 - dealing with events from the user interface and
 performing API calls. */
 
-
-var addButton = document.getElementById('addToCalendar');
-addButton.onclick = function(){
-  console.log("add button clicked");
-  var userChoices = getUserInput();
-  console.log(userChoices);
-  if (userChoices)
-    createEvent(userChoices);
-}
-
 function getUserInput(){
+    var form = document.forms[0];
+    console.log(form);
 
-  var date = document.querySelector("#date").value;
-  var startTime = document.querySelector("#start").value;
-  var endTime = document.querySelector("#end").value;
-  var eventDesc = document.querySelector("#event").value;
-  //var addPeople = document.querySelector("#attendees").value;
+  var date = form.querySelector("#inputDate").value;
+  var startTime = form.querySelector("#inputStartTime").value;
+  var endTime = form.querySelector("#inputEndTime").value;
+  var eventDesc = form.querySelector("#eventDescription").value;
 
   // check input values, they should not be empty
   if (date=="" || startTime=="" || endTime=="" || eventDesc==""){
-    alert("All your required input fields should have a meaningful value.");
+    alert("All your input fields should have a meaningful value.");
     return
   } else {
     alert("Congratulations, you have successfully scheduled a workout.");
@@ -85,18 +78,6 @@ function getUserInput(){
   }
 }
 
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == workoutForm) {
-        workoutForm.style.display = "none";
-    }
-}
-
-bW.onclick = function() {
-    workoutForm.style.display = "block";
-}
 
 // Make an API call to create an event.  Give feedback to user.
 function createEvent(eventData) {
@@ -108,16 +89,12 @@ function createEvent(eventData) {
         },
         "end": {
           "dateTime": new Date(eventData.date + " " + eventData.endTime).toISOString()
-        },
-        "attendees": [
-          {'email': '27andersonra@gmail.com'}
-        ]
+          }
         };
     // create the request
     var request = gapi.client.calendar.events.insert({
       'calendarId': 'primary',
       'resource': resource
-      //'colorID': red
     });
 
     // execute the request and do something with response
@@ -126,4 +103,37 @@ function createEvent(eventData) {
       alert("Your event was added to the calendar.");
     });
     location.reload();
+}
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == workoutForm) {
+        workoutForm.style.display = "none";
+    }
+}
+
+bNewWorkout.onclick = function() {
+    workoutForm.style.display = "block";
+}
+
+bSubmitWorkout.onclick = function() {
+  console.log("submit button");
+  workoutForm.style.display = "none";
+  console.log("new workout submitted ");
+  var userChoices = getUserInput();
+  console.log(userChoices);
+  if (userChoices)
+    createEvent(userChoices);
+}
+
+
+function submitWorkoutFunc() {
+  console.log("submit button");
+  workoutForm.style.display = "none";
+  console.log("new workout submitted ");
+  var userChoices = getUserInput();
+  console.log(userChoices);
+  if (userChoices)
+    createEvent(userChoices);
 }

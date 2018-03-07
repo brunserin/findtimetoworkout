@@ -27,7 +27,7 @@ ast {
 	float: right;
 }
 
-.create-workout-button {
+#new-workout-button {
 	background-color: #007acc;
 	float: right;
 	width: 50px;
@@ -75,7 +75,7 @@ ast {
 	display: block;
 	margin: 0 auto;
   width: 900px;
-	height: 250px;
+	height: 270px;
 	margin-top: -30px;
 	padding: 20px;
 }
@@ -113,7 +113,14 @@ ast {
 #submit-workout-button{
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 20px;
+	margin-top: 10px;
+}
+
+#auth-button{
+	text-align: center;
+	margin: 0 auto;
+  margin-left: -30px; 
+	margin-top: -38px;
 
 }
 
