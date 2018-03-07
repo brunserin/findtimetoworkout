@@ -65,6 +65,7 @@ function getUserInput(){
   var startTime = form.querySelector("#inputStartTime").value;
   var endTime = form.querySelector("#inputEndTime").value;
   var eventDesc = form.querySelector("#eventDescription").value;
+  var Friend = form.querySelector("#addFriend").value;
 
   // check input values, they should not be empty
   if (date=="" || startTime=="" || endTime=="" || eventDesc==""){

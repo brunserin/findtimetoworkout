@@ -35,7 +35,7 @@
   </nav>
 
   <form id="workoutForm" class="form-page">
-    <div class="workoutFormContent">
+    <div id="workoutFormContent">
       <div class="form-line row">
         <label class="col-sm-2 col-form-label">Date</label>
         <div class="col-sm-10">
@@ -45,9 +45,10 @@
       <div class="form-line row">
         <label class="col-sm-2 col-form-label">Start Time</label>
         <div class="col-sm-10">
-          <input type="time" class="form-control" id="inputStartTime">
+          <input type="time" class="form-control" placeholder="hh:mm AM" id="inputStartTime">
         </div>
       </div>
+
       <div class="form-line row">
         <label class="col-sm-2 col-form-label">End Time</label>
         <div class="col-sm-10">
@@ -55,9 +56,19 @@
         </div>
       </div>
       <div class="form-line row">
+        <label class="col-sm-2 col-form-label">Description</label>
         <div class="col-sm-10">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <input type="text" class="form-control" id="eventDescription">
         </div>
+      </div>
+      <div class="form-line row">
+        <label class="col-sm-2 col-form-label">Add Friend</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="addFriend" value="Anna Kendrick">
+        </div>
+      </div>
+      <div id="submit-workout-button" class="col-sm-10">
+        <button id="bSubmit" type="button" class="btn btn-primary buttonColorChange">Submit</button>
       </div>
     </div>
   </form>
@@ -69,13 +80,13 @@
   <div id="userName"><b>Anna Kendrick</b></div>
   <div id="profileOptions">
     <p>
-      <button id="addToCalendar" class="btn btn-primary buttonColorChange" type="submit"><i class="fas fa-plus"></i> Invite to Workout </button>
+      <button id="new-workout-button" class="btn btn-primary buttonColorChange buttonOptions" type="submit"><i class="fas fa-plus"></i> Invite to Workout </button>
     </p>
     <p>
-     <button id="GroupChallengeOnProfile" class="btn btn-primary buttonColorChange" type="submit"><i class="fas fa-plus"></i> Invite to Group Challenge </button>
+     <button id="GroupChallengeOnProfile" class="btn btn-primary buttonColorChange buttonOptions" type="submit"><i class="fas fa-plus"></i> Invite to Group Challenge </button>
     </p>
     <p>
-      <button id="DeleteFriend" class="btn btn-primary buttonColorChange" type="submit"><i class="fas fa-minus"></i> Delete Friend</button>
+      <button id="DeleteFriend" class="btn btn-primary buttonColorChange buttonOptions" type="submit"><i class="fas fa-minus"></i> Delete Friend</button>
     </p>
   </div>
 </div>
