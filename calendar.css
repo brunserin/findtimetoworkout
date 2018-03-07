@@ -113,7 +113,7 @@ ast {
 #submit-workout-button{
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 20px; 
+	margin-top: 20px;
 
 }
 
@@ -129,12 +129,18 @@ ast {
 
 [type="date"] {
   background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  99% 50% no-repeat ;
+
 }
 [type="date"]::-webkit-inner-spin-button {
   display: none;
+	cursor: pointer;
+
+
 }
 [type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
+	cursor: pointer;
+
 }
 
 
@@ -142,12 +148,11 @@ ast {
 
 [type="time"] {
   background:#fff url(https://cdn2.iconfinder.com/data/icons/pittogrammi/142/10-16.png)  99% 50% no-repeat ;
+
 }
 [type="time"]::-webkit-inner-spin-button {
   display: none;
-}
-[type="time"]::-webkit-calendar-picker-indicator {
-  opacity: 0;
+
 }
 
 
