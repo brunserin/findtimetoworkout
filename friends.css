@@ -15,22 +15,6 @@
 	font-size: 18px;
 }
 
-/*.friend-list-item:link{
-	text-decoration: none;
-}
-.friend-list-item:hover{
-	text-decoration: none;
-}
-.friend-list-item:active{
-	text-decoration: none;
-}
-.friend-list-item:visited{
-	text-decoration: none;
-}*/
-
-
-
-
 .friends-list {
 	overflow: hidden;
 	list-style: none;
