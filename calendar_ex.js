@@ -8,6 +8,9 @@ var workoutForm = document.getElementById('workoutForm');
 var bNewWorkout = document.getElementById('new-workout-button');
 var bSubmit = document.getElementById('bSubmit');
 
+document.getElementById("inputStartTime").defaultValue = "12:00";
+document.getElementById("inputEndTime").defaultValue = "12:00";
+
 
 /* Function invoked when the client javascript library is loaded */
 function handleClientLoad() {
