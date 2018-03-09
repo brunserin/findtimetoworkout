@@ -78,6 +78,14 @@ userIcon{
 	margin: 5px;
 }
 
+.celebrate-icon{
+	width: 20px;
+	height: 20px;
+	float: left;
+	cursor: pointer;
+	margin: 3px; 
+}
+
 
 /*==================================================
   Create Post Box CSS
