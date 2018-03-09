@@ -1,7 +1,9 @@
 var item1LikeCount = 13;
 var item2LikeCount = 5;
+
 var liked1 = false;
 var liked2 = false;
+var liked3 = false;
 
 function addOne(){
 	if(liked1 == false){
@@ -25,4 +27,20 @@ function addTwo(){
 		item2LikeCount--;
 		document.getElementById("dCelebrate2").innerHTML = '<img class="celebrate-icon" src="greyCongrats.png"> ' + item2LikeCount;
 	}
+}
+
+function addThree(){
+	if(liked3 == false){
+		liked3 = true;
+		document.getElementById("dCelebrate3").innerHTML = '<img class="celebrate-icon" src="colorCongrats.png"> ' + 1;
+	} else {
+		liked3 = false;
+		document.getElementById("dCelebrate3").innerHTML = '<img class="celebrate-icon" src="greyCongrats.png">';
+	}
+}
+
+function newStatus(){
+	document.getElementById("status").innerHTML = "<i class='fas fa-comment'></i> <b>Jane Doe: </b>" + " \"" + document.getElementById("exampleTextarea").value + "\"";
+	document.getElementById("newPost").style = "display: normal";
+	document.getElementById("exampleTextarea").value = "";
 }

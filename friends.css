@@ -71,19 +71,15 @@ userIcon{
 	font-size: 50px;
 }
 
-.like-bar{
+.like-bar {
 	text-align: right;
 	align-content: right;
 	float: right;
 	margin: 5px;
 }
 
-.celebrate-icon{
-	width: 20px;
-	height: 20px;
-	float: left;
+.like-bar:hover {
 	cursor: pointer;
-	margin: 3px; 
 }
 
 

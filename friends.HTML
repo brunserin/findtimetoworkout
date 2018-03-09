@@ -75,6 +75,12 @@
         </div>
         <div id="newsFeed" style="overflow-y: scroll;">
 
+            <li class="newsFeedListItem" id="newPost" style="display: none">
+                <div id="status"></div>
+                <div id="newsFeedListItem1" onclick="addThree()" class="like-bar"><div id="dCelebrate3"><img class="celebrate-icon" src="greyCongrats.png"></div></div><br>
+
+            </li>
+
             <li class="newsFeedListItem">
                 <i class="fas fa-trophy"></i>  <a href="profile.html" class="newsFeed-friend-name">Anna Kendrick</a> completed her step challenge of 10,000 steps this week!
                 <div><img id="news-feed-image-steps" src="steps.jpeg"></div>
@@ -107,7 +113,7 @@
                                     <li><a href="#"><i class="fa fa-paperclip"></i></a></li>
                                     <li><a href="#"><i class="fa fa-map"></i></a></li>
                                 </ul>
-                                <button id="bPublish" class="btn btn-primary pull-right buttonColorChange">Publish</button>
+                                <button id="bPublish" onclick="newStatus()" class="btn btn-primary pull-right buttonColorChange">Publish</button>
                             </div>
                         </div>
                     </div>
