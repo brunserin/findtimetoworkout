@@ -68,7 +68,7 @@ function getUserInput(){
   var startTime = form.querySelector("#inputStartTime").value;
   var endTime = form.querySelector("#inputEndTime").value;
   var eventDesc = form.querySelector("#eventDescription").value;
-  var Friend = form.querySelector("#addFriend").value;
+  var friend = form.querySelector("#addFriend").value;
 
   // check input values, they should not be empty
   if (date=="" || startTime=="" || endTime=="" || eventDesc==""){
@@ -77,7 +77,7 @@ function getUserInput(){
   } else {
     alert("Congratulations, you have successfully scheduled a workout.");
     return {'date': date, 'startTime': startTime, 'endTime': endTime,
-               'eventTitle': eventDesc}
+               'eventTitle': eventDesc, 'attendees': friend}
   }
 }
 
@@ -92,7 +92,14 @@ function createEvent(eventData) {
         },
         "end": {
           "dateTime": new Date(eventData.date + " " + eventData.endTime).toISOString()
-          }
+        },
+        "attendees": [
+              {
+                "id": "Anna Kendrick",
+                "email": "27andersonra@gmail.com",
+                "displayName": "Anna Kendrick"
+              }
+          ],
         };
     // create the request
     var request = gapi.client.calendar.events.insert({
