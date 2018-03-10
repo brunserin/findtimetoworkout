@@ -3,6 +3,30 @@
 	display: inline-block;
 }
 
+.profile-picture{
+	width: 65px;
+	height: 65px;
+	margin-bottom: 7px;
+}
+
+.custom-icon{
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 15px;
+	display: inline-block;
+}
+.custom-icon-weight{
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin-right: 45px;
+	margin-left: 5px;
+	margin-top: 15px;
+}
+
 .friend-list-item{
 	border-bottom: 1px solid #007acc;
 	display : relative;
@@ -13,6 +37,8 @@
 	text-decoration: none;
 	cursor: pointer;
 	font-size: 18px;
+	width: 400px;
+	height: 85px;
 }
 
 .friends-list {
@@ -22,7 +48,7 @@
 }
 
 .best-friends {
-	height: 120px;
+	height: 280px;
 }
 
 .all-friends {
@@ -33,11 +59,12 @@
 .friends-header {
 	font-weight: bold;
 	margin-left: 10px;
+	font-size: 25px;
 }
 
 .friends-list-wrapper {
 	background-color:  #c0d5e3;
-	width: 210px;
+	width: 400px;
 	margin-left: 20px;
 	height: 560px;
 	border-radius: 3px;
