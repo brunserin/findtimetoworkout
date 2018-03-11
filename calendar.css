@@ -113,7 +113,7 @@ ast {
 #submit-workout-button{
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 10px;
+	margin-top: -15px;
 }
 
 #auth-button{
