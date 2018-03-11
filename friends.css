@@ -22,6 +22,7 @@
      margin-left: 5px;
      margin-top: 15px;
      display: inline-block;
+     color: #212F29;
 }
  .custom-icon-weight{
      float: right;
@@ -172,7 +173,7 @@
      margin-left: 5px;
 }
  .create-post .tools ul.publishing-tools li a {
-     color: #6d6e71;
+     color: #212F29;
      font-size: 18px;
 }
  .create-post .tools ul.publishing-tools li a:hover {
