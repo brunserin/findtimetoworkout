@@ -31,87 +31,95 @@
 
     <!-- The list of friends -->
 
+    <div class="main-content">
+        
+        <!-- Make a post -->
 
+        <div class="newsfeed-wrapper">
+            <!-- Newsfeed -->
+            <div class="newsfeed-header">
+                Your Friends' Activity
+                </div>
+            <div id="newsFeed">
+                
+                <li class="newsFeedListItem" id="newPost" style="display: none">
+                    <div id="status"></div>
+                    <div id="newsFeedListItem1" onclick="addThree()" class="like-bar">
+                        <div id="dCelebrate3"><img class="celebrate-icon" src="greyCongrats.png"></div>
+                    </div>
+                    <br>
 
-<div class="main-content">
-    <div class="friends-list-wrapper">
-        <nav>
-            <div class="friends-header">Best Friends</div>
-            <ul class="friends-list best-friends">
-                <!--<li class="friend-list-item" onclick="location.href='profile.html';"><img class="profile-picture" src="profile_picture.png">  Anna Kendrick <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i></li>-->
-                <li class="friend-list-item"><img class="profile-picture" src="profile_picture.png">  Anna Kendrick <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i></li>
-                <li class="friend-list-item"><img class="profile-picture" src="pp1.png"> Kendrick Lamar <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i>  </li>
-                <li class="friend-list-item"><img class="profile-picture" src="pp3.png"> Rachel Anderson <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i></li>
-            </ul>
-        </nav>
+                </li>
 
-        <nav>
-            <div class="friends-header">All Friends</div>
-            <ul class="friends-list all-friends" style="overflow-y: scroll;">
-              <li class="friend-list-item"><img class="profile-picture" src="pp1.png"> Steve Harvey <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i>  </li>
-              <li class="friend-list-item"><img class="profile-picture" src="pp3.png"> Kylie Chesner <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i></li>
-              <li class="friend-list-item"><img class="profile-picture" src="pp1.png"> Brendon Urie <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i>  </li>
-              <li class="friend-list-item"><img class="profile-picture" src="pp3.png"> Erin Bruns <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i></li>
-              <li class="friend-list-item"><img class="profile-picture" src="pp1.png"> Morty Shapiero <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i>  </li>
-              <li class="friend-list-item"><img class="profile-picture" src="pp3.png"> Corinne Burger <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i></li>
-            </ul>
-        </nav>
-    </div>
-    <!-- Make a post -->
+                <li class="newsFeedListItem">
+                    <!--<i class="fas fa-trophy"></i>  <a href="profile.html" class="newsFeed-friend-name">Anna Kendrick</a> completed her step challenge of 10,000 steps this week!-->
+                    <i class="fas fa-trophy"></i>  <a class="newsFeed-friend-name">Anna Kendrick</a> completed her step challenge of 10,000 steps this week!
+                    <div><img id="news-feed-image-steps" src="steps.jpeg"></div>
+                    <div id="newsFeedListItem3" onclick="addOne()" class="like-bar">
+                        <div id="dCelebrate1"><img class="celebrate-icon" src="greyCongrats.png"> 13</div>
+                    </div>
+                    <br>
 
+                </li>
 
-    <div class="container">
-        <!-- Newsfeed -->
-        <div class="newsfeed-header"> <p> Your Friends' Activity </p> </div>
-        <div id="newsFeed" style="overflow-y: scroll;">
+                <li class="newsFeedListItem">
+                    <!--<i class="fas fa-images"></i>  <a href="profile.html" class="newsFeed-friend-name">Anna Kendrick</a> added a new photo.-->
+                    <i class="fas fa-images"></i>  <a class="newsFeed-friend-name">Anna Kendrick</a> added a new photo.
+                    <div><img class="news-feed-image" src="marathon-finish.jpg"></div>
+                    <div id="newsFeedListItem2" onclick="addTwo()" class="like-bar">
+                        <div id="dCelebrate2"><img class="celebrate-icon" src="greyCongrats.png"> 5</div>
+                    </div>
+                    "I ran my first marathon!"
 
-            <li class="newsFeedListItem" id="newPost" style="display: none">
-                <div id="status"></div>
-                <div id="newsFeedListItem1" onclick="addThree()" class="like-bar"><div id="dCelebrate3"><img class="celebrate-icon" src="greyCongrats.png"></div></div><br>
+                </li>
 
-            </li>
+            </div>
+        
+            <div class="create-post">
+                <div  id="posting" class="left">
+                    <div class="form-group">
+                        <textarea name="texts" id="exampleTextarea" class="form-control" placeholder="Share Progress"></textarea>
+                    </div>
+                </div>
+                
 
-            <li class="newsFeedListItem">
-                <!--<i class="fas fa-trophy"></i>  <a href="profile.html" class="newsFeed-friend-name">Anna Kendrick</a> completed her step challenge of 10,000 steps this week!-->
-                <i class="fas fa-trophy"></i>  <a class="newsFeed-friend-name">Anna Kendrick</a> completed her step challenge of 10,000 steps this week!
-                <div><img id="news-feed-image-steps" src="steps.jpeg"></div>
-                <div id="newsFeedListItem3" onclick="addOne()" class="like-bar"><div id="dCelebrate1"><img class="celebrate-icon" src="greyCongrats.png"> 13</div></div><br>
-
-            </li>
-
-            <li class="newsFeedListItem">
-                <!--<i class="fas fa-images"></i>  <a href="profile.html" class="newsFeed-friend-name">Anna Kendrick</a> added a new photo.-->
-                <i class="fas fa-images"></i>  <a class="newsFeed-friend-name">Anna Kendrick</a> added a new photo.
-                <div><img class="news-feed-image" src="marathon-finish.jpg"></div>
-                <div id="newsFeedListItem2" onclick="addTwo()" class="like-bar"><div id="dCelebrate2"><img class="celebrate-icon" src="greyCongrats.png"> 5</div></div>
-                "I ran my first marathon!"
-
-            </li>
-
-        </div>
-      </div>
-        <div class="create-post">
-            <div class="row">
-                <div class="column" id="posting">
-                    <div class="row">
-                        <div class="column">
-                            <div class="form-group">
-                                <textarea name="texts" id="exampleTextarea" cols="30" rows="2" class="form-control" placeholder="Share Progress"></textarea>
-                            </div>
-                        </div>
-                        <div class="toolsAndButtonRow">
-                            <div class="tools">
-                                <ul id="publishIcons" class="publishing-tools list-inline">
-                                    <li><a href="#"><i class="fa fa-camera-retro"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-paperclip"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-map"></i></a></li>
-                                </ul>
-                                <button id="bPublish" onclick="newStatus()" class="btn btn-primary pull-right buttonColorChange">Publish</button>
-                            </div>
-                        </div>
+                <div class="toolsAndButtonRow right">
+                    <div class="tools">
+                        <ul id="publishIcons" class="publishing-tools list-inline">
+                            <li><a href="#"><i class="fa fa-camera-retro"></i></a></li>
+                            <li><a href="#"><i class="fa fa-paperclip"></i></a></li>
+                            <li><a href="#"><i class="fa fa-map"></i></a></li>
+                        </ul>
+                        <button id="bPublish" onclick="newStatus()" class="btn btn-primary pull-right buttonColorChange">Publish</button>
                     </div>
                 </div>
             </div>
+
+        </div>
+
+
+        <div class="friends-list-wrapper">
+            <nav>
+                <div class="friends-header">Best Friends</div>
+                <ul class="friends-list best-friends">
+                    <!--<li class="friend-list-item" onclick="location.href='profile.html';"><img class="profile-picture" src="profile_picture.png">  Anna Kendrick <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i></li>-->
+                    <li class="friend-list-item"><img class="profile-picture" src="profile_picture.png">  Anna Kendrick <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i></li>
+                    <li class="friend-list-item"><img class="profile-picture" src="pp1.png"> Kendrick Lamar <img src="weight.png" class="custom-icon-weight"> <i class="fas fa-trophy custom-icon"></i> <i class="fas fa-minus-circle custom-icon"></i> </li>
+                    <li class="friend-list-item"><img class="profile-picture" src="pp3.png"> Rachel Anderson <img src="weight.png" class="custom-icon-weight"> <i class="fas fa-trophy custom-icon"></i> <i class="fas fa-minus-circle custom-icon"></i></li>
+                </ul>
+            </nav>
+
+            <nav>
+                <div class="friends-header">All Friends</div>
+                <ul class="friends-list all-friends">
+                    <li class="friend-list-item"><img class="profile-picture" src="pp1.png"> Steve Harvey <img src="weight.png" class="custom-icon-weight"> <i class="fas fa-trophy custom-icon"></i> <i class="fas fa-minus-circle custom-icon"></i> </li>
+                    <li class="friend-list-item"><img class="profile-picture" src="pp3.png"> Kylie Chesner <img src="weight.png" class="custom-icon-weight"> <i class="fas fa-trophy custom-icon"></i> <i class="fas fa-minus-circle custom-icon"></i></li>
+                    <li class="friend-list-item"><img class="profile-picture" src="pp1.png"> Brendon Urie <img src="weight.png" class="custom-icon-weight"> <i class="fas fa-trophy custom-icon"></i> <i class="fas fa-minus-circle custom-icon"></i> </li>
+                    <li class="friend-list-item"><img class="profile-picture" src="pp3.png"> Erin Bruns <img src="weight.png" class="custom-icon-weight"> <i class="fas fa-trophy custom-icon"></i> <i class="fas fa-minus-circle custom-icon"></i></li>
+                    <li class="friend-list-item"><img class="profile-picture" src="pp1.png"> Morty Shapiero <img src="weight.png" class="custom-icon-weight"> <i class="fas fa-trophy custom-icon"></i> <i class="fas fa-minus-circle custom-icon"></i> </li>
+                    <li class="friend-list-item"><img class="profile-picture" src="pp3.png"> Corinne Burger <img src="weight.png" class="custom-icon-weight"> <i class="fas fa-trophy custom-icon"></i> <i class="fas fa-minus-circle custom-icon"></i></li>
+                </ul>
+            </nav>
         </div>
     </div>
 
