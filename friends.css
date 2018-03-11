@@ -1,305 +1,261 @@
 /* css specifically for content on friends page */
-
-
-.main-content {
-    display: flex;
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 980px;
-    padding-left: 10px;
-/*  background-color: #c0d5e3;
-*/}
-
-.profile-picture{
-    width: 65px;
-    height: 65px;
-    margin-bottom: 7px;
+ .main-content {
+     display: flex;
+     margin: 0 auto;
+     margin-top: 20px;
+     width: 980px;
+     padding-left: 10px;
+    /* background-color: #c0d5e3;
+     */
 }
-
-.custom-icon{
-    float: right;
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-top: 15px;
-    display: inline-block;
+ .profile-picture{
+     width: 65px;
+     height: 65px;
+     margin-bottom: 7px;
 }
-.custom-icon-weight{
-    float: right;
-    width: 30px;
-    height: 30px;
-    margin-right: 50px;
-    margin-left: 5px;
-    margin-top: 15px;
+ .custom-icon{
+     float: right;
+     width: 30px;
+     height: 30px;
+     margin-right: 5px;
+     margin-left: 5px;
+     margin-top: 15px;
+     display: inline-block;
 }
-
-.friend-list-item{
-    border-bottom: 1px solid #007acc;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin: 5px;
-    margin-left: -5px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 18px;
-    width: 400px;
-    height: 85px;
+ .custom-icon-weight{
+     float: right;
+     width: 30px;
+     height: 30px;
+     margin-right: 50px;
+     margin-left: 5px;
+     margin-top: 15px;
 }
-
-.friends-list {
-    overflow: hidden;
-    list-style: none;
-    background-color: #c0d5e3;
-    border-radius: 3px;
-    padding-left: 10px;
+ .friend-list-item{
+     border-bottom: 1px solid #007acc;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     margin: 5px;
+     margin-left: -5px;
+     text-decoration: none;
+     cursor: pointer;
+     font-size: 18px;
+     width: 400px;
+     height: 85px;
 }
-
-.best-friends {
-    height: 280px;
+ .friends-list {
+     overflow: hidden;
+     list-style: none;
+     background-color: #c0d5e3;
+     border-radius: 3px;
+     padding-left: 10px;
 }
-
-.all-friends {
-    height: 250px;
-    overflow-y: scroll;
+ .best-friends {
+     height: 280px;
 }
-
-.friends-header {
-    font-weight: bold;
-    font-size: 30px;
-
+ .all-friends {
+     height: 250px;
+     overflow-y: scroll;
 }
-
-.friends-list-wrapper {
-/*  background-color:  #c0d5e3;
-*/  width: 400px;
-    margin-left: 15px;
-    height: 650px;
-    border-radius: 3px;
-/*  margin-bottom: 20px;
-*/  /*float: left;*/
+ .friends-header {
+     font-weight: bold;
+     font-size: 30px;
 }
-
-.form-content {
-    background-color: #fefefe;
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 3px;
+ .friends-list-wrapper {
+    /* background-color: #c0d5e3;
+     */
+     width: 400px;
+     margin-left: 15px;
+     height: 650px;
+     border-radius: 3px;
+    /* margin-bottom: 20px;
+     */
+    /*float: left;
+    */
 }
-
-.logNumber {
+ .form-content {
+     background-color: #fefefe;
+     padding: 20px;
+     border: 1px solid #888;
+     border-radius: 3px;
 }
-
-img.profile-photo-md {
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
+ .logNumber {
 }
-
-userIcon{
-    height: 45px;
-    width: 45px;
-    font-size: 50px;
+ img.profile-photo-md {
+     height: 45px;
+     width: 45px;
+     border-radius: 50%;
 }
-
-.like-bar {
-    float: right;
-    margin-right: 5px;
+ userIcon{
+     height: 45px;
+     width: 45px;
+     font-size: 50px;
 }
-
-.like-bar:hover {
-    cursor: pointer;
+ .like-bar {
+     float: right;
+     margin-right: 5px;
 }
-
-
-/*==================================================
-  Create Post Box CSS
-  ==================================================*/
-
-.newsfeed-wrapper {
-    margin: 0px;
-    float: left;
-/*  background-color: #c0d5e3;
-*/  padding-right: 15px;
-    padding-left: 15px;
+ .like-bar:hover {
+     cursor: pointer;
 }
-
-.left {
-    float: left;
+/*================================================== Create Post Box CSS ==================================================*/
+ .newsfeed-wrapper {
+     margin: 0px;
+     float: left;
+    /* background-color: #c0d5e3;
+     */
+     padding-right: 15px;
+     padding-left: 15px;
 }
-
-.right {
-    float: right;
+ .left {
+     float: left;
 }
-
-.create-post {
-    /*min-height: 90px;*/
-    display: inline-block;
+ .right {
+     float: right;
 }
-
-.create-post .form-group {
-    /*margin-bottom: 0;*/
-/*  display: inline-block;
-*/  /*width: 466px;*/
+ .create-post {
+    /*min-height: 90px;
+    */
+     display: inline-block;
 }
-
-.row {
-    /*width: 800px;*/
-    /*margin-left: 205px;*/
-    /*margin-top: -65px; */
+ .create-post .form-group {
+    /*margin-bottom: 0;
+    */
+    /* display: inline-block;
+     */
+    /*width: 466px;
+    */
 }
-
-.column {
-/*  padding-left: 12px;
-*/}
-
-.toolsAndButtonRow {
-    /*width: 200px;*/
+ .row {
+    /*width: 800px;
+    */
+    /*margin-left: 205px;
+    */
+    /*margin-top: -65px;
+     */
 }
-
-#exampleTextarea {
-    /*max-height: 104px;*/
-    width: 306px;
+ .column {
+    /* padding-left: 12px;
+     */
 }
-
-
-.create-post .form-group .form-control {
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    height: 45px;
+ .toolsAndButtonRow {
+    /*width: 200px;
+    */
 }
-
-.create-post .form-group img.profile-photo-md {
-    /*vertical-align: top;*/
+ #exampleTextarea {
+    /*max-height: 104px;
+    */
+     width: 306px;
 }
-
-.create-post .tools {
-    padding: 8px 0 10px;
+ .create-post .form-group .form-control {
+     border: 1px solid #ccc;
+     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+     height: 45px;
 }
-
-.create-post .tools ul.publishing-tools {
-    display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
+ .create-post .form-group img.profile-photo-md {
+    /*vertical-align: top;
+    */
 }
-
-.create-post .tools ul.publishing-tools li a {
-    color: #6d6e71;
-    font-size: 18px;
+ .create-post .tools {
+     padding: 8px 0 10px;
 }
-
-.create-post .tools ul.publishing-tools li a:hover {
-    color: #27aae1;
+ .create-post .tools ul.publishing-tools {
+     display: inline-block;
+     margin-right: 5px;
+     margin-left: 5px;
 }
-
-.list-inline>li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
+ .create-post .tools ul.publishing-tools li a {
+     color: #6d6e71;
+     font-size: 18px;
 }
-
-.newsfeed-header {
-    font-size: 30px;
-    font-weight: bold;
+ .create-post .tools ul.publishing-tools li a:hover {
+     color: #27aae1;
 }
-
-#newsFeed {
-    height: 520px;
-    width: 520px;
-    list-style: none;
-    overflow-y: scroll;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #c0d5e3;
-    border-radius: 3px;
+ .list-inline>li {
+     display: inline-block;
+     padding-right: 5px;
+     padding-left: 5px;
 }
-
-
-.newsFeedListItem {
-    padding: 5px;
-    margin-bottom: 15px;
-    border-radius: 3px;
-    border-color: #c0d5e3;
-    border-width: 3px;
-    min-height: 45px;
-    background-color: white;
-    font-size: 18px;
+ .newsfeed-header {
+     font-size: 30px;
+     font-weight: bold;
 }
-
-.news-feed-image {
-    height: 430px;
-    width: 500px;
-    margin-left: -5px;
+ #newsFeed {
+     height: 520px;
+     width: 520px;
+     list-style: none;
+     overflow-y: scroll;
+     margin-bottom: 10px;
+     padding: 10px;
+     background-color: #c0d5e3;
+     border-radius: 3px;
 }
-
-#news-feed-image-steps {
-    height: 340px;
-    width: 500px;
-    margin-left: -5px;
+ .newsFeedListItem {
+     padding: 5px;
+     margin-bottom: 15px;
+     border-radius: 3px;
+     border-color: #c0d5e3;
+     border-width: 3px;
+     min-height: 45px;
+     background-color: white;
+     font-size: 18px;
 }
-
-.newsFeed-friend-name,
-.newsFeed-friend-name:link,
-.newsFeed-friend-name:hover,
-.newsFeed-friend-name:active,
-.newsFeed-friend-name:visited {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
+ .news-feed-image {
+     height: 430px;
+     width: 500px;
+     margin-left: -5px;
 }
-
+ #news-feed-image-steps {
+     height: 340px;
+     width: 500px;
+     margin-left: -5px;
+}
+ .newsFeed-friend-name, .newsFeed-friend-name:link, .newsFeed-friend-name:hover, .newsFeed-friend-name:active, .newsFeed-friend-name:visited {
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+     cursor: pointer;
+}
 /*.friend-list-item:link{
-    text-decoration: none;
+     text-decoration: none;
 }
-.friend-list-item:hover{
-    text-decoration: none;
+ .friend-list-item:hover{
+     text-decoration: none;
 }
-.friend-list-item:active{
-    text-decoration: none;
+ .friend-list-item:active{
+     text-decoration: none;
 }
-.friend-list-item:visited{
-    text-decoration: none;
-}*/
-
-.buttonColorChange {
-    border-color: #007acc;
-    background-color: #007acc;
-}
-
-.buttonColorChange:hover {
-    background-color: #ffcc00;
-    border-color: #007acc;
-}
-
-.buttonColorChange:active,
-.buttonColorChange.btn:target,
-.buttonColorChange.btn:active:focus {
-    background-color: #ffcc00;
-    transform: translateY(4px);
-}
-
-.friend-list-item:hover {
-    background-color: #98bad1;
-    border-color: #007acc;
-}
-
-
-/* Scrollbar styles */
-
-/*::-webkit-scrollbar {
-    width: 12px;
-    height: 8px;
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 10px #007acc;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background: #007acc;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+ .friend-list-item:visited{
+     text-decoration: none;
 }
 */
+ .buttonColorChange {
+     border-color: #007acc;
+     background-color: #007acc;
+}
+ .buttonColorChange:hover {
+     background-color: #ffcc00;
+     border-color: #007acc;
+}
+ .buttonColorChange:active, .buttonColorChange.btn:target, .buttonColorChange.btn:active:focus {
+     background-color: #ffcc00;
+     transform: translateY(4px);
+}
+ .friend-list-item:hover {
+     background-color: #98bad1;
+     border-color: #007acc;
+}
+/* Scrollbar styles */
+/*::-webkit-scrollbar {
+     width: 12px;
+     height: 8px;
+}
+ ::-webkit-scrollbar-track {
+     box-shadow: inset 0 0 10px #007acc;
+     border-radius: 10px;
+}
+ ::-webkit-scrollbar-thumb {
+     border-radius: 10px;
+     background: #007acc;
+     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+ */
