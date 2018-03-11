@@ -11,7 +11,8 @@
  .profile-picture{
      width: 65px;
      height: 65px;
-     margin-bottom: 7px;
+     margin-left: 10px;
+     margin-right: 5px;
 }
  .custom-icon{
      float: right;
@@ -32,26 +33,21 @@
 }
  .friend-list-item{
      border-bottom: 1px solid #007acc;
-     padding-top: 5px;
-     padding-bottom: 5px;
-     margin: 5px;
-     margin-left: -5px;
+     padding-top: 10px;
+     padding-bottom: 10px;
      text-decoration: none;
      cursor: pointer;
      font-size: 18px;
      width: 400px;
-     height: 85px;
 }
  .friends-list {
      overflow: hidden;
      list-style: none;
      background-color: #c0d5e3;
      border-radius: 3px;
-     padding-left: 10px;
+     padding-left: 0px;
 }
- .best-friends {
-     height: 280px;
-}
+
  .all-friends {
      height: 250px;
      overflow-y: scroll;
@@ -185,9 +181,9 @@
      list-style: none;
      overflow-y: scroll;
      margin-bottom: 10px;
-     padding: 10px;
      background-color: #c0d5e3;
      border-radius: 3px;
+     border: 10px solid #c0d5e3;
 }
  .newsFeedListItem {
      padding: 5px;
