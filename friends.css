@@ -134,17 +134,14 @@
      */
 }
  .toolsAndButtonRow {
-    /*width: 200px;
-    */
+        width: 400px;
+    /*width: 200px;*/
 }
  #exampleTextarea {
-    /*max-height: 104px;
-    */
-     width: 320px;
+    min-height: 45px;
+    width: 315px;
 }
 #bPublish{
-  float: right;
-  margin-right: -95px;
 }
  .create-post .form-group .form-control {
      border: 1px solid #ccc;
@@ -157,6 +154,9 @@
 }
  .create-post .tools {
      padding: 8px 0 10px;
+     float: right;
+     margin-top: -61px;
+     margin-right: 4px;
 }
  .create-post .tools ul.publishing-tools {
      display: inline-block;
