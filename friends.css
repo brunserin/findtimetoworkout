@@ -31,6 +31,14 @@
      margin-left: 5px;
      margin-top: 15px;
 }
+.custom-icon:hover{
+  color: #27aae1;
+}
+.custom-icon-weight:hover{
+  content: url('blueWeight.png');
+  width: 30px;
+  height: 30px;
+}
  .friend-list-item{
      border-bottom: 1px solid #007acc;
      padding-top: 10px;
