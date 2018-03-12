@@ -23,4 +23,6 @@ body {
 .buttonColorChange.btn:active:focus {
 	background-color: #ffcc00;
 	transform: translateY(4px);
+	outline: none;
+	outline-style: none;
 }

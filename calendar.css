@@ -36,10 +36,6 @@ ast {
 	border-color: #007acc;
 	margin: 20px;
 }
-
-
-
-
 .create-workout-button:hover {
 	background-color: #ffcc00;
 	border-color: #007acc;
@@ -50,6 +46,7 @@ ast {
 .create-workout-button.btn:active:focus {
 	background-color: #ffcc00;
 	transform: translateY(4px);
+	outline-style: none;
 }
 
 .form-field {

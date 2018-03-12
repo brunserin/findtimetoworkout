@@ -46,7 +46,6 @@
   width: 30px;
   padding: 0px;
   border-style: none;
-  outline: none;
   margin-right: 50px;
   margin-left: 5px;
   margin-top: 15px;
@@ -54,10 +53,12 @@
 .iconImage:hover {
   border-style: none;
   background-color: inherit;
-  outline: none;
 }
-.iconImage:active {
+.iconImage:active,.iconImage.btn:target,
+.iconImage.btn:active:focus {
   background-color: inherit;
+  outline-style: none;
+  outline: none;
 }
 .custom-icon-weight-button{
     float: right;
@@ -71,7 +72,6 @@
 }
 .custom-icon-weight-button:active, .custom-icon-weight-button.btn:target, .custom-icon-weight-button.btn:active:focus {
   background-color: inherit;
-  outline: none;
   border-style: none;
 }
  .friend-list-item{
@@ -271,18 +271,7 @@
      text-decoration: none;
 }
 */
- .buttonColorChange {
-     border-color: #007acc;
-     background-color: #007acc;
-}
- .buttonColorChange:hover {
-     background-color: #ffcc00;
-     border-color: #007acc;
-}
- .buttonColorChange:active, .buttonColorChange.btn:target, .buttonColorChange.btn:active:focus {
-     background-color: #ffcc00;
-     transform: translateY(4px);
-}
+
  .friend-list-item:hover {
      background-color: #98bad1;
      border-color: #007acc;

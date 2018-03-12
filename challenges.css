@@ -110,8 +110,20 @@ details > summary{
 	margin: 20px;
 	margin-top: 130px;
 }
+.create-workout-button:hover {
+	background-color: #ffcc00;
+	border-color: #007acc;
+}
 
-#log-activity-button{
+.create-workout-button:active,
+.create-workout-button.btn:target,
+.create-workout-button.btn:active:focus {
+	background-color: #ffcc00;
+	transform: translateY(4px);
+	outline-style: none;
+}
+
+.log-activity-button {
 	background-color: #007acc;
 	float: right;
 	width: 50px;
@@ -119,6 +131,18 @@ details > summary{
 	border-radius: 150px;
 	border-color: #007acc;
 	margin-top: 130px;
+}
+.log-activity-button:hover {
+	background-color: #ffcc00;
+	border-color: #007acc;
+}
+
+.log-activity-button:active,
+.log-activity-button.btn:target,
+.log-activity-button.btn:active:focus {
+	background-color: #ffcc00;
+	transform: translateY(4px);
+	outline-style: none;
 }
 
 
@@ -132,6 +156,9 @@ details > summary{
 	list-style-type: none
 }
 
+.drop-down {
+	outline-style: none;
+}
 
 
 /* The Modal (background) */
