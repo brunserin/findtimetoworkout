@@ -33,48 +33,44 @@
         </div>
     </nav>
 
-    <!-- Solo/Group Buttons -->
-
-    <button id="bSoloChallenge" class="btn btn-primary buttonColorChange" type="submit"><i class="fas fa-plus"></i> New Solo Challenge </button>
-    <button id="bGroupChallenge" class="btn btn-primary buttonColorChange" type="submit"><i class="fas fa-plus"></i> New Group Challenge </button>
-
-    <!-- Charts -->
-    <div class="name-chart-s">My Solo Challenges</div>
-    <div class="horizontal-line"></div>
-    <div class="chart-wrapper-steps">
-        <div class="chart">
-            <div id="donutchart1" style="width: 500px; height: 200px;"></div>
+    <!-- image background -->
+    <div><img class="background" src="challengespic.jpg">
+        <div class="transbox">
+            <p> 10,000 steps a day</p>
         </div>
     </div>
 
-    <div class="name-chart-r">My Group Challenges</div>
-    <div class="horizontal-line-r"></div>
-    <div class="chart-wrapper-running">
-        <div class="chart">
-            <div id="donutchart2" style="width: 500px; height: 200px;"></div>
-        </div>
-    </div>
-
-    <div class="past-challenges"><p>My Completed Challenges</p>
-      <!-- Completed Challenges -->
-      <div>
-          <ul class="completed-challenges">
-              <li><b>10,000 steps</b> completed February 20, 2018</li>
-              <br>
-              <li><b>26 miles</b> completed February 15, 2018</li>
-          </ul>
-      </div>
-
-    </div>
-    <div class="horizontal-line-c"></div>
+    <!-- New challenge Button -->
+    <button class="btn btn-primary create-workout-button" type="button" id="new-workout-button"><i class="fas fa-plus"></i></button>
 
     <!-- Log Activity buttons -->
-    <div>
-        <button class="btn btn-primary buttonColorChange" type="submit" id="bLogActivityR"><i class="fas fa-plus"></i> Log Activity</button>
-    </div>
-    <div>
-        <button class="btn btn-primary buttonColorChange" type="submit" id="bLogActivityS"><i class="fas fa-plus"></i> Log Activity</button>
-    </div>
+     <button class="btn btn-primary buttonColorChange" type="submit" id="log-activity-button"><i class="fas fa-pencil-alt"></i></button>
+
+
+    <!-- view solo challenges -->
+    <details open>
+        <summary>Solo Challenges</summary>
+        <ol>
+            <div class="chart-wrapper-steps">
+            <div class="chart">
+                <div id="donutchart1" style="width: 500px; height: 200px;"></div>
+            </div>
+            </div>
+        </ol>
+    </details>
+
+    <!-- view group challenges -->
+    <details open>
+        <summary>Group Challenges</summary>
+        <p>
+            <div class="chart-wrapper-running">
+            <div class="chart">
+                <div id="donutchart2" style="width: 500px; height: 200px;"></div>
+            </div>
+            </div>
+        </p>
+    </details>
+
 
     <!-- forms -->
 
@@ -91,7 +87,7 @@
         <div class="form-content">
           <div class="logNumber">
             <input id="num-steps" type="number" placeholder="1000 (steps)"  size="40px" >
-          </div> 
+          </div>
             <button id="submit-steps" type="button" class="bSubmitLogActivity btn btn-primary buttonColorChange"> Submit </button>
         </div>
     </form>
