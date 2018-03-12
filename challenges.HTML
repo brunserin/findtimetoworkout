@@ -49,26 +49,22 @@
 
     <!-- view solo challenges -->
     <details open>
-        <summary class="drop-down">Solo Challenges</summary>
+        <summary class="drop-down" id="soloDropDown">Solo Challenges</summary>
         <ol>
-            <div class="chart-wrapper-steps">
-            <div class="chart">
-                <div id="donutchart1" style="width: 500px; height: 200px;"></div>
-            </div>
+            <div class="chart-wrapper">
+                <div id="donutchart1"></div>
             </div>
         </ol>
     </details>
 
     <!-- view group challenges -->
     <details open>
-        <summary class="drop-down">Group Challenges</summary>
-        <p>
-            <div class="chart-wrapper-running">
-            <div class="chart">
-                <div id="donutchart2" style="width: 500px; height: 200px;"></div>
+        <summary class="drop-down" id="groupDropDown">Group Challenges</summary>
+        <ol>
+            <div class="chart-wrapper">
+                <div id="donutchart2"></div>
             </div>
-            </div>
-        </p>
+        </ol>
     </details>
 
 
@@ -106,5 +102,6 @@
 
 </body>
 <script type="text/javascript" src="chart.js"></script>
+<script type="text/javascript" src="chart2.js"></script>
 
 </html>
