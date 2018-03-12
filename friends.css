@@ -40,6 +40,40 @@
   width: 30px;
   height: 30px;
 }
+.iconImage {
+  background-color: inherit;
+  height: 30px;
+  width: 30px;
+  padding: 0px;
+  border-style: none;
+  outline: none;
+  margin-right: 50px;
+  margin-left: 5px;
+  margin-top: 15px;
+}
+.iconImage:hover {
+  border-style: none;
+  background-color: inherit;
+  outline: none;
+}
+.iconImage:active {
+  background-color: inherit;
+}
+.custom-icon-weight-button{
+    float: right;
+    width: 30px;
+    height: 30px;
+}
+.custom-icon-weight-button:hover{
+  content: url('blueWeight.png');
+  width: 30px;
+  height: 30px;
+}
+.custom-icon-weight-button:active, .custom-icon-weight-button.btn:target, .custom-icon-weight-button.btn:active:focus {
+  background-color: inherit;
+  outline: none;
+  border-style: none;
+}
  .friend-list-item{
      border-bottom: 1px solid #007acc;
      padding-top: 10px;

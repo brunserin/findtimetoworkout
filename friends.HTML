@@ -10,8 +10,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" type="text/css" href="FTTW.css">
+    <link rel="stylesheet" type="text/css" href="calendar.css">
     <link rel="stylesheet" type="text/css" href="friends.css" />
-    <script src="friends.js"></script>
 </head>
 
 <body>
@@ -28,6 +28,46 @@
             </div>
         </div>
     </nav>
+
+    <form id="workoutForm" class="form-page">
+      <div id="workoutFormContent">
+        <div class="form-line row">
+          <label class="col-sm-2 col-form-label">Date</label>
+          <div class="col-sm-10">
+            <input type="date" class="form-control" id="inputDate">
+          </div>
+        </div>
+        <div class="form-line row">
+          <label class="col-sm-2 col-form-label">Start Time</label>
+          <div class="col-sm-10">
+            <input type="time" class="form-control" placeholder="hh:mm AM" id="inputStartTime">
+          </div>
+        </div>
+
+        <div class="form-line row">
+          <label class="col-sm-2 col-form-label">End Time</label>
+          <div class="col-sm-10">
+            <input type="time" class="form-control" id="inputEndTime">
+          </div>
+        </div>
+        <div class="form-line row">
+          <label class="col-sm-2 col-form-label">Description</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="eventDescription">
+          </div>
+        </div>
+        <div class="form-line row">
+          <label class="col-sm-2 col-form-label">Add Friend</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="addFriend" value="Anna Kendrick">
+          </div>
+        </div>
+        <br>
+        <div id="submit-workout-button" class="col-sm-10">
+          <button id="bSubmit" type="button" class="btn btn-primary buttonColorChange">Submit</button>
+        </div>
+      </div>
+    </form>
 
 
     <!-- Page Content -->
@@ -105,7 +145,7 @@
                 <div class="friends-header">Best Friends</div>
                 <ul class="friends-list best-friends">
                     <!--<li class="friend-list-item" onclick="location.href='profile.html';"><img class="profile-picture" src="profile_picture.png">  Anna Kendrick <img src="weight.png" class="custom-icon-weight">  <i class="fas fa-trophy custom-icon"></i>  <i class="fas fa-minus-circle custom-icon"></i></li>-->
-                    <li class="friend-list-item"><img class="profile-picture" src="profile_picture.png"> Anna Kendrick <img src="weight.png" class="custom-icon-weight"> <i class="fas fa-trophy custom-icon"></i> <i class="fas fa-minus-circle custom-icon"></i></li>
+                    <li class="friend-list-item"><img class="profile-picture" src="profile_picture.png"> Anna Kendrick <button id="new-workout-button" class="btn btn-primary custom-icon-weight-button iconImage" type="submit" ><img src="weight.png" class="custom-icon-weight-button"></button> <i class="fas fa-trophy custom-icon"></i> <i class="fas fa-minus-circle custom-icon"></i></li>
                     <li class="friend-list-item"><img class="profile-picture" src="pp1.png"> Kendrick Lamar <img src="weight.png" class="custom-icon-weight"> <i class="fas fa-trophy custom-icon"></i> <i class="fas fa-minus-circle custom-icon"></i> </li>
                     <li class="friend-list-item"><img class="profile-picture" src="pp3.png"> Rachel Anderson <img src="weight.png" class="custom-icon-weight"> <i class="fas fa-trophy custom-icon"></i> <i class="fas fa-minus-circle custom-icon"></i></li>
                 </ul>
@@ -131,6 +171,8 @@
         </div>
     </div>
 
+    <script src="friends.js"></script>
+    <script src="calendar_ex.js"></script>
 </body>
 
 </html>
