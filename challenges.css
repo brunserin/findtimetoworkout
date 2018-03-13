@@ -98,11 +98,20 @@ details > summary{
 	outline-style: none;
 }
 
+/* style form elements for log-challenge-activity form  */
 #logSolo{
 	margin-left: 33px;
 }
 #logSelect{
 	margin-left: 22px;
+	width: 400px;
+	padding: 2px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+#logAmount{
+	margin-left: 169px;
+	margin-top: -40px;
 	width: 400px;
 }
 #logAddMsg{
@@ -136,9 +145,10 @@ details > summary{
 	background-color: white;
 	margin: 0 auto;
 	width: 50%;
-	height: 70%;
+	height: 80%;
 	padding-left: 15px;
 	padding-top: 15px;
+	border-radius: 3px;
 }
 
 /*input box to enter data for challenge activities*/

@@ -8,6 +8,7 @@ var workoutForm = document.getElementById('workoutForm');
 var bNewWorkout = document.getElementById('new-workout-button');
 var bSubmit = document.getElementById('bSubmit');
 
+//set default times to convey to users what content goes in what fields
 document.getElementById("inputStartTime").defaultValue = "12:00";
 document.getElementById("inputEndTime").defaultValue = "13:00";
 
@@ -31,18 +32,15 @@ var authData;
 function handleAuthResult(authResult) {
     console.log("Inside handleAuthResult ...");
     authData = authResult;
-    var authorizeButton = document.getElementById('bAuth');
     //var submitButton = document.getElementById('bSubmit');
     if (authResult && !authResult.error) {
-          authorizeButton.style.visibility = 'hidden';
           bSubmit.style.visibility = 'visible';
           //load the calendar client library
           gapi.client.load('calendar', 'v3', function(){
             console.log("Calendar library loaded.");
           });
     } else {
-          authorizeButton.style.visibility = '';
-          authorizeButton.onclick = handleAuthClick;
+          handleAuthClick();
         }
 }
 

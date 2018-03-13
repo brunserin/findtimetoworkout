@@ -24,7 +24,7 @@
      display: inline-block;
      color: #212F29;
 }
-#deleteFriend {
+.deleteFriend {
   margin-right: 20px;
 }
  .custom-icon-weight{
@@ -119,6 +119,7 @@
      border: 1px solid #888;
      border-radius: 3px;
 }
+
  .logNumber {
 }
  img.profile-photo-md {

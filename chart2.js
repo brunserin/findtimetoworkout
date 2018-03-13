@@ -1,18 +1,20 @@
 var milesCompleted = 12;
 var milesRemaining = 8;
 var chart2;
+var data2;
+var options2;
 
 google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
 
-  var data2 = google.visualization.arrayToDataTable([
+  data2 = google.visualization.arrayToDataTable([
     ['Type', 'Number'],
     ['Completed',     milesCompleted],
     ['Remaining',     milesRemaining]
   ]);
 
-  var options2 = {
+  options2 = {
       title: "Running: 20 miles per week",
       titleTextStyle: { color: "black",
         fontSize: 20,
@@ -34,46 +36,45 @@ function drawChart() {
   chart2.draw(data2, options2);
 }
 
-var form1 = document.getElementById('form1');
-var bR = document.getElementById('bLogActivityR');
-var bSC = document.getElementById('bSoloChallenge');
-var bGC = document.getElementById('bGroupChallenge');
-var submitR = document.getElementById('submit-miles');
-var bSoloChallenge = document.getElementById('bSoloChallenge');
-var bGroupChallenge = document.getElementById('bGroupChallenge');
+var logForm = document.getElementById("logForm");
+var challengeForm = document.getElementById("ChallengeForm")
+var bSubmit = document.getElementById('submit-log');
+var bNewChallenge = document.getElementById("new-challenge-button");
+var bLogChallenge = document.getElementById("log-challenge-button");
 
-
-bR.onclick = function() {
-    form1.style.display = "block";
+bNewChallenge.onclick= function() {
+  challengeForm.style.display="block";
 }
 
-bSC.onclick = function() {
-    form3.style.display = "block";
-}
-bGC.onclick = function() {
-    form4.style.display = "block";
+bLogChallenge.onclick = function() {
+  logForm.style.display= "block";
 }
 
-submitR.onclick = function() {
 
-	var numMiles = document.getElementById('num-miles').value;
-  if (numMiles == "")
+bSubmit.onclick = function() {
+
+  var challengeActivity = document.getElementById('logSelect').value;
+  if (challengeActivity == "Running")
   {
-    alert("Enter a value");
-    return;
-  }
-  numMiles = parseInt(numMiles);
-  if (numMiles <= 0 || numMiles == NaN){
-    alert("Invalid value");
-  }
-	if(numMiles > milesRemaining){
-		numMiles = milesRemaining;
-	}
-  milesCompleted += numMiles;
-  milesRemaining -= numMiles;
-  document.getElementById('num-miles').value = "";
-  document.getElementById('num-miles').placeholder="5 (miles)"
-  form1.style.display = "none";
-  drawChart();
-  chart2.draw(data2, options2);
+        var numMiles = document.getElementById("logAmount").value;
+        if (numMiles == "")
+        {
+          alert("Enter a value");
+          return;
+        }
+        numMiles = parseInt(numMiles);
+        if (numMiles <= 0 || numMiles == NaN){
+          alert("Invalid value");
+        }
+      	if(numMiles > milesRemaining){
+      		numMiles = milesRemaining;
+      	}
+        milesCompleted += numMiles;
+        milesRemaining -= numMiles;
+        document.getElementById('logAmount').value = "";
+        document.getElementById('logAmount').placeholder="e.g. 10"
+        logForm.style.display = "none";
+        drawChart();
+        chart2.draw(data2, options2);
+}
 }
