@@ -15,7 +15,7 @@ ast {
 }
 
 .add-workout-form {
-	width: 600px;
+	width: 650px;
 	margin-left: 20px;
 	display: inline-block;
 	background-color: white;
@@ -71,8 +71,8 @@ ast {
 	background-color: white;
 	display: block;
 	margin: 0 auto;
-  width: 400px;
-	height: 300px;
+  width: 500px;
+	height: 330px;
 	margin-top: -30px;
 	padding: 20px;
 	border-radius: 3px;
@@ -109,10 +109,10 @@ ast {
 }
 
 #submit-workout-button{
-	float: right;
-	margin: 0 auto;
+	margin: auto;
 	margin-top: -15px;
-	margin-right: 9px;
+	margin-right: 170px;
+	display: block;
 }
 
 #auth-button{
