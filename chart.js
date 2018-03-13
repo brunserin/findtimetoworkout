@@ -32,23 +32,17 @@ function drawChart() {
   chart1.draw(data1, options1);
 }
 
-var form2 = document.getElementById('form2');
-var bS = document.getElementById('bLogActivityS');
-var bSC = document.getElementById('bSoloChallenge');
-var bGC = document.getElementById('bGroupChallenge');
-var submitS = document.getElementById('submit-steps');
-var bSoloChallenge = document.getElementById('bSoloChallenge');
-var bGroupChallenge = document.getElementById('bGroupChallenge');
+var logForm = document.getElementById("logForm");
+var submitS = document.getElementById('submit-log');
+var bNewChallenge = document.getElementById("new-challenge-button");
+var bLogChallenge = document.getElementById("log-challenge-button");
 
+bNewChallenge.onclick= function() {
+  alert("Already enrolled in max number of challenges");
+}
 
-bS.onclick = function() {
-    form2.style.display = "block";
-}
-bSC.onclick = function() {
-    form3.style.display = "block";
-}
-bGC.onclick = function() {
-    form4.style.display = "block";
+bLogChallenge.onclick = function() {
+  logForm.style.display= "block";
 }
 
 
@@ -76,26 +70,11 @@ submitS.onclick = function() {
   chart1.draw(data1, options1);
 }
 
-bSoloChallenge.onclick = function() {
-alert("Enrolled in max number of solo challenges already");
-form3.style.display = "none";
-return;
-}
-
-bGroupChallenge.onclick = function() {
-alert("Enrolled in max number of group challenges already");
-form4.style.display = "none";
-return;
-}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == form2) {
-        form2.style.display = "none";
+    if (event.target == logForm) {
+        logForm.style.display = "none";
     }
-    if(event.target == form3)
-        form3.style.display = "none";
-    if(event.target == form4)
-        form4.style.display = "none";
 
 }

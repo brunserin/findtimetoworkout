@@ -77,10 +77,15 @@ details > summary{
 
 #soloDropDown {
 	margin-top: 125px;
+	margin-left: 20px;
+	font-size: 30px;
+
 }
 
 #groupDropDown {
 	margin-top: 70px;
+	margin-left: 20px;
+	font-size: 30px;
 }
 
 /*wraps form content for challenge logging*/
@@ -89,7 +94,9 @@ details > summary{
 	background-color: white;
 	margin: 0 auto;
 	width: 40%;
-	height: 30%;
+	height: 65%;
+	padding-left: 10px;
+	padding-top: 10px; 
 }
 
 /*input box to enter data for challenge activities*/
@@ -104,12 +111,12 @@ details > summary{
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
-	margin-top: 10px;
+	margin-top: -50px;
 	color: white;
 	border-radius: 3px;
 }
 
-.create-workout-button {
+.new-challenge-button {
 	background-color: #007acc;
 	float: right;
 	width: 50px;
@@ -119,20 +126,20 @@ details > summary{
 	margin: 20px;
 	margin-top: 130px;
 }
-.create-workout-button:hover {
+.new-challenge-button:hover {
 	background-color: #ffcc00;
 	border-color: #007acc;
 }
 
-.create-workout-button:active,
-.create-workout-button.btn:target,
-.create-workout-button.btn:active:focus {
+.new-challenge-button:active,
+.new-challenge-button.btn:target,
+.new-challenge-button.btn:active:focus {
 	background-color: #ffcc00;
 	transform: translateY(4px);
 	outline-style: none;
 }
 
-.log-activity-button {
+.log-challenge-button {
 	background-color: #007acc;
 	float: right;
 	width: 50px;
@@ -141,14 +148,14 @@ details > summary{
 	border-color: #007acc;
 	margin-top: 130px;
 }
-.log-activity-button:hover {
+.log-challenge-button:hover {
 	background-color: #ffcc00;
 	border-color: #007acc;
 }
 
-.log-activity-button:active,
-.log-activity-button.btn:target,
-.log-activity-button.btn:active:focus {
+.log-challenge-button:active,
+.log-challenge-button.btn:target,
+.log-challenge-button.btn:active:focus {
 	background-color: #ffcc00;
 	transform: translateY(4px);
 	outline-style: none;
