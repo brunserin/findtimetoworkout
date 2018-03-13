@@ -36,7 +36,7 @@
     <!-- image background -->
     <div><img class="background" src="challengespic.jpg">
         <div class="transbox">
-            <p> 10,000 steps a day</p>
+            <p> "If it doesn't challenge you, it doesn't change you"</p>
         </div>
     </div>
 
@@ -74,12 +74,12 @@
     <div class="form-content">
     <div class="form-group">
       <label>Challenge Type</label>
-        <input type="radio" name="challengetype" id="logSolo" checked="checked" onchange="logRadioButtonSelection()">Solo<br>
+        <input type="radio" name="challengetype" id="logSolo" checked="checked" onchange="logRadioButtonSelection()">Solo
         <input type="radio" name="challengetype" id="logGroup" onchange="logRadioButtonSelection()">Group<br>
     </div>
     <div class="form-group">
       <label>Challenge Select</label>
-      <select>
+      <select id="logSelect">
         <option>Running</option>
         <option>Steps</option>
       </select>
@@ -88,13 +88,13 @@
       Share To Newsfeed
       <input type="checkbox">
     </div>
-    <div class="form-group">
+    <div id="logMsgWrapper" class="form-group">
       <label>Add Message</label>
-      <textarea placeholder="Add message here to go with newsfeed post"></textarea>
+      <input type="text" id="logAddMsg" placeholder="Add message to newsfeed post"  class="form-control">
     </div>
     <div class="form-group" id="forGroupOnly">
       <label>Add Friend</label>
-      <input type="text" class="form-control">
+      <input id="logAddFriend" type="text" class="form-control" placeholder="Type in a friend's name">
     </div>
     <button id="submit-log" type="button" class="btn btn-primary buttonColorChange">Submit</button>
   </div>
