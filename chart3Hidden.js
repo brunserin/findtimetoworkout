@@ -41,44 +41,10 @@ var submitS = document.getElementById('submit-log');
 var bNewChallenge = document.getElementById("new-challenge-button");
 var bLogChallenge = document.getElementById("log-challenge-button");
 
-bNewChallenge.onclick= function() {
-  alert("Already enrolled in max number of challenges");
-}
-
-bLogChallenge.onclick = function() {
-  logForm.style.display= "block";
-}
-
-
-submitS.onclick = function() {
-
-	// var numSteps = document.getElementById('num-steps').value;
-  // if (numSteps == "")
-  // {
-  //   alert("Enter a value");
-  //   return;
-  // }
-  // numSteps = parseInt(numSteps);
-  // if (numSteps <= 0 || numSteps == NaN){
-  //   alert("Invalid value");
-  // }
-	// if(numSteps > stepsRemaining){
-	// 	numSteps = stepsRemaining;
-	// }
-  // stepsCompleted += numSteps;
-  // stepsRemaining -= numSteps;
-  // document.getElementById('num-steps').value = "";
-  // document.getElementById('num-steps').placeholder="1000 (steps)"
-  // form2.style.display = "none";
-  // drawChart();
-  // chart1.draw(data1, options1);
-}
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == logForm) {
-        logForm.style.display = "none";
-    }
-
-}
+// bNewChallenge.onclick= function() {
+//   alert("Already enrolled in max number of challenges");
+// }
+//
+// bLogChallenge.onclick = function() {
+//   logForm.style.display= "block";
+// }

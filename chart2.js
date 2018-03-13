@@ -77,28 +77,3 @@ submitR.onclick = function() {
   drawChart();
   chart2.draw(data2, options2);
 }
-
-
-bSoloChallenge.onclick = function() {
-alert("Enrolled in max number of solo challenges already");
-form3.style.display = "none";
-return;
-}
-
-bGroupChallenge.onclick = function() {
-alert("Enrolled in max number of group challenges already");
-form4.style.display = "none";
-return;
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == form1) {
-        form1.style.display = "none";
-    }
-    if(event.target == form3)
-        form3.style.display = "none";
-    if(event.target == form4)
-        form4.style.display = "none";
-
-}

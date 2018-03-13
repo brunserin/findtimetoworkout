@@ -37,12 +37,13 @@ function drawChart() {
 }
 
 var logForm = document.getElementById("logForm");
+var challengeForm = document.getElementById("ChallengeForm")
 var submitS = document.getElementById('submit-log');
 var bNewChallenge = document.getElementById("new-challenge-button");
 var bLogChallenge = document.getElementById("log-challenge-button");
 
 bNewChallenge.onclick= function() {
-  alert("Already enrolled in max number of challenges");
+  challengeForm.style.display="block";
 }
 
 bLogChallenge.onclick = function() {
@@ -81,4 +82,23 @@ window.onclick = function(event) {
     if (event.target == logForm) {
         logForm.style.display = "none";
     }
+    if (event.target == challengeForm) {
+        challengeForm.style.display = "none";
+    }
 }
+
+// function newRadioButtonSelection(){
+//   if(document.getElementById('newSolo').checked) {
+//     document.getElementById("forGroupOnly").style = "display: none";
+//   }else if(document.getElementById('newGroup').checked) {
+//     document.getElementById("forGroupOnly").style = "display: normal";
+//   }
+// }
+//
+// function logRadioButtonSelection(){
+//   if(document.getElementById('logSolo').checked) {
+//     document.getElementById("forGroupOnly").style = "display: none";
+//   }else if(document.getElementById('logGroup').checked) {
+//     document.getElementById("forGroupOnly").style = "display: normal";
+//   }
+// }
