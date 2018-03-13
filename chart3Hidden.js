@@ -1,6 +1,6 @@
 var totalThrowMins = 10000;
 var throwMinsCompleted = 0;
-var throwMinsRemaining = totalThrowMinss - throwMinsCompleted;
+var throwMinsRemaining = totalThrowMins - throwMinsCompleted;
 var chart3;
 
 google.charts.load("current", {packages:["corechart"]});
@@ -19,7 +19,8 @@ function drawChart() {
       },
       pieSliceTextStyle: {
             color: 'black',
-          },
+      },
+      backgroundColor: "#c0d5e3",
       pieHole: 0.3,
       slices: {
             0: { color: '#ffcc00'},
@@ -32,7 +33,7 @@ function drawChart() {
   chart3 = new google.visualization.PieChart(document.getElementById('donutchart3'));
 
 
-  chart1.draw(data3, options3);
+  chart3.draw(data3, options3);
 }
 
 var logForm = document.getElementById("logForm");

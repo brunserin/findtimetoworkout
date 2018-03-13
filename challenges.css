@@ -84,6 +84,10 @@
 	width: 500px;
 	height: 200px;
 }
+#donutchart3 {
+	width: 500px;
+	height: 200px;
+}
 
 details{
 	width: 100%;
@@ -167,7 +171,7 @@ details > summary{
 	transform: translateY(4px);
 	outline-style: none;
 }
-.newChallenge {
+#newChallengeDonut {
 	display: none;
 }
 
