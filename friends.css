@@ -99,7 +99,6 @@
      overflow-y: scroll;
 }
  .friends-header {
-     font-weight: bold;
      font-size: 30px;
 }
  .friends-list-wrapper {
@@ -223,7 +222,6 @@
 }
  .newsfeed-header {
      font-size: 30px;
-     font-weight: bold;
 }
  #newsFeed {
      height: 520px;
