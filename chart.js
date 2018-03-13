@@ -17,6 +17,7 @@ function drawChart() {
       titleTextStyle: { color: "black",
         fontSize: 20,
       },
+      backgroundColor: "#c0d5e3",
       pieHole: 0.3,
       slices: {
             0: { color: '#ffcc00'},
@@ -48,27 +49,28 @@ bLogChallenge.onclick = function() {
 
 submitS.onclick = function() {
 
-	// var numSteps = document.getElementById('num-steps').value;
-  // if (numSteps == "")
-  // {
-  //   alert("Enter a value");
-  //   return;
-  // }
-  // numSteps = parseInt(numSteps);
-  // if (numSteps <= 0 || numSteps == NaN){
-  //   alert("Invalid value");
-  // }
-	// if(numSteps > stepsRemaining){
-	// 	numSteps = stepsRemaining;
-	// }
-  // stepsCompleted += numSteps;
-  // stepsRemaining -= numSteps;
-  // document.getElementById('num-steps').value = "";
-  // document.getElementById('num-steps').placeholder="1000 (steps)"
-  // form2.style.display = "none";
-  // drawChart();
-  // chart1.draw(data1, options1);
+// 	var numSteps = document.getElementById('num-steps').value;
+//   if (numSteps == "")
+//   {
+//     alert("Enter a value");
+//     return;
+//   }
+//   numSteps = parseInt(numSteps);
+//   if (numSteps <= 0 || numSteps == NaN){
+//     alert("Invalid value");
+//   }
+// 	if(numSteps > stepsRemaining){
+// 		numSteps = stepsRemaining;
+// 	}
+//   stepsCompleted += numSteps;
+//   stepsRemaining -= numSteps;
+//   document.getElementById('num-steps').value = "";
+//   document.getElementById('num-steps').placeholder="1000 (steps)"
+//   form2.style.display = "none";
+//   drawChart();
+//   chart1.draw(data1, options1);
 }
+
 
 
 // When the user clicks anywhere outside of the modal, close it
@@ -76,5 +78,4 @@ window.onclick = function(event) {
     if (event.target == logForm) {
         logForm.style.display = "none";
     }
-
 }

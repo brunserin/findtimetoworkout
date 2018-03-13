@@ -22,6 +22,28 @@
 	text-align: center;
 }
 
+.challenges-section {
+	border-radius: 3px;
+	background-color: #c0d5e3;
+	margin: 0 auto;
+	width: 520px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 10px;
+}
+
+.drop-down {
+	font-size: 30px;
+}
+
+.solo-section {
+	margin-top: 130px;
+}
+
+.group-section {
+	margin-bottom: 20px;
+}
+
 .solo-challenge-button{
 	font-size: 20px;
 	position: fixed;
@@ -49,11 +71,8 @@
 
 .chart-wrapper {
 	display: block;
-	border-radius: 5px;
 	width: 400px;
 	height: 200px;
-	padding-top: 20px;
-	margin: auto;
 }
 
 #donutchart1 {
@@ -75,18 +94,6 @@ details > summary{
 	outline-style: none;
 }
 
-#soloDropDown {
-	margin-top: 125px;
-	margin-left: 20px;
-	font-size: 30px;
-
-}
-
-#groupDropDown {
-	margin-top: 70px;
-	margin-left: 20px;
-	font-size: 30px;
-}
 
 /*wraps form content for challenge logging*/
 /*provides centered white background for visual clarity*/
@@ -96,7 +103,7 @@ details > summary{
 	width: 40%;
 	height: 65%;
 	padding-left: 10px;
-	padding-top: 10px; 
+	padding-top: 10px;
 }
 
 /*input box to enter data for challenge activities*/
@@ -132,14 +139,14 @@ details > summary{
 }
 
 .new-challenge-button:active,
-.new-challenge-button.btn:target,
-.new-challenge-button.btn:active:focus {
+.cnew-challenge-button.btn:target,
+.cnew-challenge-button.btn:active:focus {
 	background-color: #ffcc00;
 	transform: translateY(4px);
 	outline-style: none;
 }
 
-.log-challenge-button {
+.log-activity-button {
 	background-color: #007acc;
 	float: right;
 	width: 50px;
