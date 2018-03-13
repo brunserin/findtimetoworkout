@@ -139,14 +139,14 @@ details > summary{
 }
 
 .new-challenge-button:active,
-.cnew-challenge-button.btn:target,
-.cnew-challenge-button.btn:active:focus {
+.new-challenge-button.btn:target,
+.new-challenge-button.btn:active:focus {
 	background-color: #ffcc00;
 	transform: translateY(4px);
 	outline-style: none;
 }
 
-.log-activity-button {
+.log-challenge-button {
 	background-color: #007acc;
 	float: right;
 	width: 50px;
