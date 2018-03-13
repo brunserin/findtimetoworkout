@@ -2,103 +2,129 @@
 <html lang="en">
 
 <head>
-    <title>Challenges</title>
-    <link rel="shortcut icon" type="image/x-icon" href="running_icon.png" />
+  <title>Challenges</title>
+  <link rel="shortcut icon" type="image/x-icon" href="running_icon.png" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="FTTW.css">
-    <link rel="stylesheet" type="text/css" href="challenges.css" />
+  <link rel="stylesheet" type="text/css" href="FTTW.css">
+  <link rel="stylesheet" type="text/css" href="challenges.css" />
 </head>
 
 <!-- Nav bar -->
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
-        <a class="navbar-brand" href="calendar.HTML">Find Time to Work Out</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="calendar.HTML"><i class="fas fa-calendar-alt"></i> Calendar</a>
-                <a class="nav-item nav-link active" href="challenges.HTML"><i class="fas fa-trophy"></i> Challenges <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="friends.HTML"><i class="fas fa-users"></i> Friends</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- image background -->
-    <div><img class="background" src="challengespic.jpg">
-        <div class="transbox">
-            <p> 10,000 steps a day</p>
-        </div>
+  <nav class="navbar sticky-top navbar-expand-sm navbar-dark">
+    <a class="navbar-brand" href="calendar.HTML">Find Time to Work Out</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="calendar.HTML"><i class="fas fa-calendar-alt"></i> Calendar</a>
+        <a class="nav-item nav-link active" href="challenges.HTML"><i class="fas fa-trophy"></i> Challenges <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="friends.HTML"><i class="fas fa-users"></i> Friends</a>
+      </div>
     </div>
+  </nav>
 
-    <!-- New challenge Button -->
-    <button class="btn btn-primary create-workout-button" type="button" id="new-workout-button"><i class="fas fa-plus"></i></button>
+  <!-- image background -->
+  <div><img class="background" src="challengespic.jpg">
+    <div class="transbox">
+      <p> 10,000 steps a day</p>
+    </div>
+  </div>
 
-    <!-- Log Activity buttons -->
-     <button class="btn btn-primary log-activity-button" type="button"><i class="fas fa-pencil-alt"></i></button>
+  <!-- New challenge Button -->
+  <button class="btn btn-primary new-challenge-button" type="button" id="new-challenge-button"><i class="fas fa-plus"></i></button>
 
-
-    <!-- view solo challenges -->
-    <details open>
-        <summary class="drop-down" id="soloDropDown">Solo Challenges</summary>
-        <ol>
-            <div class="chart-wrapper">
-                <div id="donutchart1"></div>
-            </div>
-        </ol>
-    </details>
-
-    <!-- view group challenges -->
-    <details open>
-        <summary class="drop-down" id="groupDropDown">Group Challenges</summary>
-        <ol>
-            <div class="chart-wrapper">
-                <div id="donutchart2"></div>
-            </div>
-        </ol>
-    </details>
+  <!-- Log Activity buttons -->
+  <button id="log-challenge-button" class="btn btn-primary log-challenge-button" type="button"><i class="fas fa-pencil-alt"></i></button>
 
 
-    <!-- forms -->
+  <!-- view solo challenges -->
+  <details open>
+    <summary class="drop-down" id="soloDropDown">Solo Challenges</summary>
+    <ol>
+      <div class="chart-wrapper">
+        <div id="donutchart1"></div>
+      </div>
+    </ol>
+  </details>
 
-    <form id="form1" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
-        <div id="formContent1" class="form-content">
-          <div class="logNumber">
-            <input id="num-miles" type="number" placeholder="5 (miles)" size="40px">
-          </div>
-            <button type="button" id="submit-miles" class="bSubmitLogActivity btn btn-primary buttonColorChange"> Submit </button>
-        </div>
-    </form>
+  <!-- view group challenges -->
+  <details open>
+    <summary class="drop-down" id="groupDropDown">Group Challenges</summary>
+    <ol>
+      <div class="chart-wrapper">
+        <div id="donutchart2"></div>
+      </div>
+    </ol>
+  </details>
 
-    <form id="form2" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
-        <div class="form-content">
-          <div class="logNumber">
-            <input id="num-steps" type="number" placeholder="1000 (steps)"  size="40px" >
-          </div>
-            <button id="submit-steps" type="button" class="bSubmitLogActivity btn btn-primary buttonColorChange"> Submit </button>
-        </div>
-    </form>
 
-    <form id="form3" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
-        <div class="form-content">
-            <button class="bSubmitLogActivity btn btn-primary buttonColorChange" type="submit"> Submit </button>
-        </div>
-    </form>
+  <!-- form -->
 
-    <form id="form4" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
-        <div class="form-content">
-            <button class="bSubmitLogActivity btn btn-primary buttonColorChange" type="submit"> Submit </button>
-        </div>
-    </form>
+  <!-- <form id="logForm" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
+    <div id="formContent1" class="form-content">
+      <h> Challenge Type </h>
+      <div id="formRadio">
+        <input type="radio"> Solo
+        <input type="radio"> Group
+      </div>
+      <h> Select Challenge </h>
+      <div id="formSelect">
+        <select>
+          <option>Running</option>
+          <option>Steps</option>
+        </select>
+      </div>
+      <h> Amount </h>
+      <div id="formAmount"><input type="number"> miles</div>
+      <div id="formShareCB">
+        Share to newsfeed
+        <input type="checkbox">
+      </div>
+      <div id="formShareMsg">
+        Add message to shared post
+        <textarea></textarea>
+      </div>
+    </div>
+    <button type="button" id="submit-miles" class="bSubmitLogActivity btn btn-primary buttonColorChange"> Submit </button>
+  </form> -->
+
+  <form id="logForm" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
+    <div class="form-content">
+    <div class="form-group">
+      <label>Challenge Type</label>
+        <input type="radio"> Solo
+        <input type="radio"> Group
+    </div>
+    <div class="form-group">
+      <label>Challenge Select</label>
+      <select>
+        <option>Running</option>
+        <option>Steps</option>
+      </select>
+    </div>
+    <div class="checkbox">
+      Share To Newsfeed
+      <input type="checkbox">
+    </div>
+    <div class="form-group">
+      <label>Add Message</label>
+      <textarea placeholder="Add message here to go with newsfeed post"></textarea>
+    </div>
+    <button id="submit-log" type="button" class="btn btn-default">Submit</button>
+  </div>
+  </form>
+
+
 
 </body>
 <script type="text/javascript" src="chart.js"></script>

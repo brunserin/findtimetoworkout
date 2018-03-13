@@ -48,26 +48,26 @@ bLogChallenge.onclick = function() {
 
 submitS.onclick = function() {
 
-	var numSteps = document.getElementById('num-steps').value;
-  if (numSteps == "")
-  {
-    alert("Enter a value");
-    return;
-  }
-  numSteps = parseInt(numSteps);
-  if (numSteps <= 0 || numSteps == NaN){
-    alert("Invalid value");
-  }
-	if(numSteps > stepsRemaining){
-		numSteps = stepsRemaining;
-	}
-  stepsCompleted += numSteps;
-  stepsRemaining -= numSteps;
-  document.getElementById('num-steps').value = "";
-  document.getElementById('num-steps').placeholder="1000 (steps)"
-  form2.style.display = "none";
-  drawChart();
-  chart1.draw(data1, options1);
+	// var numSteps = document.getElementById('num-steps').value;
+  // if (numSteps == "")
+  // {
+  //   alert("Enter a value");
+  //   return;
+  // }
+  // numSteps = parseInt(numSteps);
+  // if (numSteps <= 0 || numSteps == NaN){
+  //   alert("Invalid value");
+  // }
+	// if(numSteps > stepsRemaining){
+	// 	numSteps = stepsRemaining;
+	// }
+  // stepsCompleted += numSteps;
+  // stepsRemaining -= numSteps;
+  // document.getElementById('num-steps').value = "";
+  // document.getElementById('num-steps').placeholder="1000 (steps)"
+  // form2.style.display = "none";
+  // drawChart();
+  // chart1.draw(data1, options1);
 }
 
 
