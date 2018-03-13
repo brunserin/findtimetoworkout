@@ -167,7 +167,9 @@ details > summary{
 	transform: translateY(4px);
 	outline-style: none;
 }
-
+.newChallenge {
+	display: none;
+}
 
 .completed-challenges {
 	background-color: white;

@@ -243,6 +243,9 @@
      background-color: white;
      font-size: 18px;
 }
+#newPost {
+  display: none;
+}
  .news-feed-image {
      height: 430px;
      width: 500px;

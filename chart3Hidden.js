@@ -17,6 +17,9 @@ function drawChart() {
       titleTextStyle: { color: "black",
         fontSize: 20,
       },
+      pieSliceTextStyle: {
+            color: 'black',
+          },
       pieHole: 0.3,
       slices: {
             0: { color: '#ffcc00'},
