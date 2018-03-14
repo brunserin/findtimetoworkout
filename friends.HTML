@@ -144,8 +144,8 @@
             <nav>
                 <div class="friends-header">Best Friends</div>
                 <ul class="friends-list best-friends">
-                    <li class="friend-list-item">
-                      <img class="profile-picture" src="profile_picture.png"> Anna Kendrick <i class="fas fa-minus-circle custom-icon deleteFriend" title="Delete friend"> </i>
+                    <li class="friend-list-item" id="annaKendrickLI">
+                      <img class="profile-picture" src="profile_picture.png"> Anna Kendrick <i class="fas fa-minus-circle custom-icon deleteFriend" title="Delete friend" onclick="hideFriend()"> </i>
                       <i class="fas fa-trophy custom-icon" title="Invite to challenge"></i>
                       <button id="new-workout-button" class="btn btn-primary custom-icon-weight-button iconImage" type="button" title="Invite to workout"><img src="weight.png" class="custom-icon-weight-button"></button>
                     </li>
@@ -165,7 +165,7 @@
             <!-- All Friends Section -->
             <nav>
                 <div class="friends-header">All Friends</div>
-                <ul class="friends-list all-friends">
+                <ul class="friends-list all-friends" id="all-friends">
                     <li class="friend-list-item">
                       <img class="profile-picture" src="pp1.png"> Brendon Urie <i class="fas fa-minus-circle custom-icon deleteFriend" title="Delete friend"></i>
                       <i class="fas fa-trophy custom-icon" title="Invite to challenge"></i>

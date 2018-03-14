@@ -44,3 +44,8 @@ function newStatus(){
 	document.getElementById("newPost").style = "display: normal";
 	document.getElementById("exampleTextarea").value = "";
 }
+
+function hideFriend(){
+	document.getElementById("annaKendrickLI").style = "display: none";
+	document.getElementById("all-friends").style = "height: 344px";
+}
