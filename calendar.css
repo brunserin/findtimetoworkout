@@ -38,7 +38,7 @@ ast {
 }
 .create-workout-button:hover {
 	background-color: #ffcc00;
-	border-color: #007acc;
+	border-color: #ffcc00;
 }
 
 .create-workout-button:active,

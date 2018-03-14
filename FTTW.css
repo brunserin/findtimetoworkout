@@ -15,7 +15,7 @@ body {
 
 .buttonColorChange:hover {
 	background-color: #ffcc00;
-	border-color: #007acc;
+	border-color: #ffcc00;
 }
 
 .buttonColorChange:active,
