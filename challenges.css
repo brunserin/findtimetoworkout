@@ -132,7 +132,7 @@ details > summary{
 	display: block;
 }
 #logShare{
-	margin-left: 10px; 
+	margin-left: 10px;
 }
 
 
@@ -143,8 +143,7 @@ details > summary{
 	margin: 0 auto;
 	width: 625px;
 	height: 325px;
-	padding-left: 25px;
-	padding-top: 20px;
+	padding: 25px;
 	border-radius: 3px;
 }
 
