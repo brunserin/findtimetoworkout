@@ -132,4 +132,14 @@ bSubmit.onclick = function() {
   console.log(userChoices);
   if (userChoices)
     createEvent(userChoices);
+  clearForm();
+}
+
+function clearForm(){
+  document.getElementById("inputDate").value="";
+  document.getElementById("inputStartTime").defaultValue = "12:00";
+  document.getElementById("inputEndTime").defaultValue = "13:00";
+  document.getElementById("eventDescription").value="";
+  document.getElementById("addFriend").value="";
+
 }
