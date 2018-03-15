@@ -10,6 +10,7 @@ var sharing = 0;
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == logForm) {
+        resetLogForm();
         logForm.style.display = "none";
     }
     if (event.target == challengeForm) {
@@ -49,12 +50,7 @@ bSubmit.onclick = function() {
         // if (numMiles == 5){
           document.getElementById("graph").innerHTML = "<img src='progressAfter.png' class='graph-image'/>";
         // }
-        document.getElementById('logAmount').value = "";
-        document.getElementById('logAmount').placeholder="e.g. 10"
-        document.getElementById('logShare').checked=0;
-        toggleVisibility();
-        document.getElementById('logAddMsg').value = "";
-        logForm.style.display = "none";
+        resetLogForm();
       }
 
 }
@@ -69,4 +65,14 @@ function toggleVisibility(){
     document.getElementById("logMsgWrapper").style = "display: none";
     sharing = 0;
   }
+}
+
+function resetLogForm(){
+  document.getElementById('logAmount').value = "";
+  document.getElementById('logAmount').placeholder="e.g. 10"
+  document.getElementById('logShare').checked=0;
+  toggleVisibility();
+  document.getElementById('logAddMsg').value = "";
+  logForm.style.display = "none";
+  document.getElementById('logRadioAll').checked="checked";
 }
