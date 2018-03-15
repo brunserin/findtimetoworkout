@@ -50,9 +50,9 @@ bSubmit.onclick = function() {
         // if (numMiles == 5){
           document.getElementById("graph").innerHTML = "<img src='progressAfter.png' class='graph-image'/>";
         // }
-        resetLogForm();
-      }
 
+      }
+      resetLogForm();
 }
 
 function toggleVisibility(){
