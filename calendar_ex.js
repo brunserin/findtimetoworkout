@@ -71,7 +71,8 @@ function getUserInput(){
   // check input values, they should not be empty
   if (date=="" || startTime=="" || endTime=="" || eventDesc==""){
     alert("All your input fields should have a meaningful value.");
-    return
+    workoutForm.style.display = "block";
+    return;
   } else {
     alert("Congratulations, you have successfully scheduled a workout.");
     return {'date': date, 'startTime': startTime, 'endTime': endTime,
