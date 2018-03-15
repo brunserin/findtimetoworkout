@@ -189,7 +189,7 @@ details > summary{
 }
 .new-challenge-button:hover {
 	background-color: #ffcc00;
-	border-color: #007acc;
+	border-color: #ffcc00;
 }
 
 .new-challenge-button:active,
@@ -211,7 +211,7 @@ details > summary{
 }
 .log-challenge-button:hover {
 	background-color: #ffcc00;
-	border-color: #007acc;
+	border-color: #ffcc00;
 }
 
 .log-challenge-button:active,
