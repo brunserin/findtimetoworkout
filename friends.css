@@ -158,7 +158,20 @@
     /*min-height: 90px;
     */
      display: inline-block;
+     background-color: #c0d5e3;
+     width: 520px;
+     margin-bottom: -7px;
 }
+
+#posting {
+  width: 520px;
+  border-style: solid;
+  border-width: 10px;
+  border-radius: 3px;
+  border-color: #c0d5e3;
+  border-bottom: none;
+}
+
  .create-post .form-group {
     /*margin-bottom: 0;
     */
@@ -185,7 +198,7 @@
 }
  #exampleTextarea {
     min-height: 45px;
-    width: 315px;
+    width: 300px;
 }
 #bPublish{
 }
@@ -237,6 +250,7 @@
      background-color: #c0d5e3;
      border-radius: 3px;
      border: 10px solid #c0d5e3;
+     margin-top: -7px;
 }
  .newsFeedListItem {
      padding: 5px;
