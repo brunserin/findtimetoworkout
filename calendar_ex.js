@@ -118,6 +118,7 @@ function createEvent(eventData) {
 window.onclick = function(event) {
     if (event.target == workoutForm) {
         workoutForm.style.display = "none";
+        clearForm(); 
     }
 }
 
