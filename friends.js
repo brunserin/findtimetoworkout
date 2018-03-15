@@ -58,3 +58,13 @@ function hideFriend(){
 document.getElementById("trophy-icon").onclick = function(){
 	alert("Already enrolled in max number of challenges");
 }
+
+document.getElementById("cameraIcon").onclick = function(){
+	alert("Feature not available yet");
+}
+document.getElementById("paperclipIcon").onclick = function(){
+	alert("Feature not available yet");
+}
+document.getElementById("mapIcon").onclick = function(){
+	alert("Feature not available yet");
+}
