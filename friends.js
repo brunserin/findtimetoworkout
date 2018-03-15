@@ -43,6 +43,8 @@ function newStatus(){
 	document.getElementById("status").innerHTML = "<i class='fas fa-comment'></i> <b>Jane Doe: </b>" + " \"" + document.getElementById("exampleTextarea").value + "\"";
 	document.getElementById("newPost").style = "display: normal";
 	document.getElementById("exampleTextarea").value = "";
+	var myDiv = document.getElementById('newsFeed');
+	myDiv.scrollTop = 0;
 }
 
 function hideFriend(){
