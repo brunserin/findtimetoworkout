@@ -17,7 +17,7 @@ window.onclick = function(event) {
     }
     if(event.target == bSubmit)
     {
-      challengeForm.style.display = "none";
+      logForm.style.display = "none";
       logForm.style.display = "none";
     }
 }
