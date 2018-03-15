@@ -33,40 +33,13 @@
         </div>
     </nav>
 
-    <!-- image background -->
-    <div><img class="background" src="challengespic.jpg">
-        <div class="transbox">
-            <p> "If it doesn't challenge you, it doesn't change you"</p>
-        </div>
-    </div>
-
   <!-- New challenge Button -->
   <button class="btn btn-primary new-challenge-button" type="button" id="new-challenge-button" title="Add new challenge"><i class="fas fa-plus"></i></button>
 
   <!-- Log Activity buttons -->
   <button id="log-challenge-button" class="btn btn-primary log-challenge-button" type="button" title="Log activity"><i class="fas fa-pencil-alt"></i></button>
 
-
-    <!-- view solo challenges -->
-    <details class="challenges-section solo-section">
-        <summary class="drop-down" id="soloDropDown">Solo Challenges</summary>
-        <div class="chart-wrapper">
-            <div id="donutchart1"></div>
-        </div>
-        <!-- Hidden Challenge (visible if user submits new challenge) -->
-        <div class="chart-wrapper" id="newChallengeDonut">
-          <div id="donutchart3"></div>
-        </div>
-    </details>
-
-    <!-- view group challenges -->
-    <details class="challenges-section group-section">
-        <summary class="drop-down" id="groupDropDown">Group Challenges</summary>
-        <div class="chart-wrapper">
-            <div id="donutchart2"></div>
-        </div>
-    </details>
-
+  <div class="graph-image-div" id="graph"><img src="progressBefore.png" class="graph-image"/></div>
 
     <!-- forms -->
 
@@ -129,8 +102,6 @@
   </form>
 
 </body>
-<script type="text/javascript" src="chart.js"></script>
-<script type="text/javascript" src="chart2.js"></script>
-<script type="text/javascript" src="chart3Hidden.js"></script>
+<script type="text/javascript" src="challenges.js"></script>
 
 </html>
