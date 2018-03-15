@@ -118,7 +118,7 @@ function createEvent(eventData) {
 window.onclick = function(event) {
     if (event.target == workoutForm) {
         workoutForm.style.display = "none";
-        clearForm(); 
+        clearForm();
     }
 }
 
@@ -138,8 +138,8 @@ bSubmit.onclick = function() {
 
 function clearForm(){
   document.getElementById("inputDate").value="";
-  document.getElementById("inputStartTime").defaultValue = "12:00";
-  document.getElementById("inputEndTime").defaultValue = "13:00";
+  document.getElementById("inputStartTime").value = "12:00";
+  document.getElementById("inputEndTime").value = "13:00";
   document.getElementById("eventDescription").value="";
   document.getElementById("addFriend").value="";
 
