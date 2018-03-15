@@ -84,19 +84,6 @@
 	height: 200px;
 }
 
-#donutchart1 {
-	width: 500px;
-	height: 200px;
-}
-
-#donutchart2 {
-	width: 500px;
-	height: 200px;
-}
-#donutchart3 {
-	width: 500px;
-	height: 200px;
-}
 
 details{
 	width: 100%;
@@ -108,11 +95,9 @@ details > summary{
 }
 
 /* style form elements for log-challenge-activity form  */
-#logSolo{
-	margin-left: 33px;
-}
+
 #logSelect{
-	margin-left: 22px;
+	margin-left: 30px;
 	width: 400px;
 	padding: 2px;
 	padding-top: 6px;
@@ -146,6 +131,9 @@ details > summary{
 	margin-bottom: 20px;
 	display: block;
 }
+#logShare{
+	margin-left: 10px; 
+}
 
 
 /*wraps form content for challenge logging*/
@@ -153,10 +141,10 @@ details > summary{
 .form-content{
 	background-color: white;
 	margin: 0 auto;
-	width: 50%;
-	height: 80%;
-	padding-left: 15px;
-	padding-top: 15px;
+	width: 625px;
+	height: 325px;
+	padding-left: 25px;
+	padding-top: 20px;
 	border-radius: 3px;
 }
 

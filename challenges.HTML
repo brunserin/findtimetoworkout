@@ -46,11 +46,6 @@
   <form id="logForm" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
     <div class="form-content">
     <div class="form-group">
-      <label>Challenge Type</label>
-        <input type="radio" name="challengetype" id="logSolo" checked="checked" onchange="logRadioButtonSelection()">Solo
-        <input type="radio" name="challengetype" id="logGroup" onchange="logRadioButtonSelection()">Group<br>
-    </div>
-    <div class="form-group">
       <label>Challenge Select</label>
       <select id="logSelect">
         <option>Running</option>
@@ -63,7 +58,7 @@
     </div>
     <div class="checkbox">
       Share To Newsfeed
-      <input type="checkbox">
+      <input id="logShare" type="checkbox">
     </div>
     <div id="logMsgWrapper" class="form-group">
       <label>Add Message</label>
@@ -72,30 +67,6 @@
     <div class="form-group" id="forGroupOnly">
       <label>Add Friend</label>
       <input id="logAddFriend" type="text" class="form-control" placeholder="Type in a friend's name">
-    </div>
-    <button id="submit-log" type="button" class="btn btn-primary buttonColorChange">Submit</button>
-  </div>
-  </form>
-
-<!-- still need: only show add friend if group challenge selected
-      formatting
-      type in your units
-      change donutchart3 display to visible
-      connect to the add challenge from Friends page-->
-  <form id="ChallengeForm" class="ui-btn ui-btn-inline ui-corner-all ui-icon-check ui-btn-icon-left form-page" style="min-width:250px;">
-    <div class="form-content">
-    <div class="form-group">
-      <label>Challenge Type</label>
-        <input type="radio" name="pickchallengetype" id="newSolo" checked="checked" onchange="newRadioButtonSelection()"> Solo
-        <input type="radio" name="pickchallengetype" id="newGroup" onchange="newRadioButtonSelection()"> Group
-    </div>
-    <div class="form-group">
-      <label>Challenge Type</label>
-      <input type="text" class="form-control">
-    </div>
-    <div class="form-group" id="forGroupOnly">
-      <label>Add Friend</label>
-      <input type="text" class="form-control">
     </div>
     <button id="submit-log" type="button" class="btn btn-primary buttonColorChange">Submit</button>
   </div>

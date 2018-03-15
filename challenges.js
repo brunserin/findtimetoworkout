@@ -4,15 +4,6 @@ var bSubmit = document.getElementById("submit-log");
 var bNewChallenge = document.getElementById("new-challenge-button");
 var bLogChallenge = document.getElementById("log-challenge-button");
 
-bNewChallenge.onclick= function() {
-  challengeForm.style.display="block";
-}
-
-bLogChallenge.onclick = function() {
-  logForm.style.display= "block";
-}
-
-
 
 
 // When the user clicks anywhere outside of the modal, close it
@@ -32,7 +23,7 @@ window.onclick = function(event) {
 
 
 bNewChallenge.onclick= function() {
-  challengeForm.style.display="block";
+  alert("Already enrolled in max number of challenges");
 }
 
 bLogChallenge.onclick = function() {
