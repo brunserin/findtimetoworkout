@@ -132,8 +132,8 @@ details > summary{
 #submit-log{
 	margin: auto;
 	margin-top: 20px;
-	margin-bottom: 20px;
-	display: block;
+/*	margin-bottom: 20px;
+*/	display: block;
 }
 #logShare{
 	margin-left: 8px;
@@ -149,8 +149,8 @@ details > summary{
 	background-color: white;
 	margin: 0 auto;
 	width: 625px;
-	height: 325px;
-	padding: 25px;
+/*	height: 325px;
+*/	padding: 25px;
 	border-radius: 3px;
 }
 

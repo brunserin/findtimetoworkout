@@ -3,6 +3,7 @@ var challengeForm = document.getElementById("ChallengeForm")
 var bSubmit = document.getElementById("submit-log");
 var bNewChallenge = document.getElementById("new-challenge-button");
 var bLogChallenge = document.getElementById("log-challenge-button");
+var sharing = 0;
 
 
 
@@ -53,4 +54,16 @@ bSubmit.onclick = function() {
         logForm.style.display = "none";
       }
 
+}
+
+function toggleVisibility(){
+  if(sharing == 0) {
+    document.getElementById("privacy").style = "display: normal";
+    document.getElementById("logMsgWrapper").style = "display: normal";
+    sharing = 1;
+  } else {
+    document.getElementById("privacy").style = "display: none";
+    document.getElementById("logMsgWrapper").style = "display: none";
+    sharing = 0;
+  }
 }
