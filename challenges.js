@@ -54,18 +54,3 @@ bSubmit.onclick = function() {
       }
 
 }
-// function newRadioButtonSelection(){
-//   if(document.getElementById("newSolo").checked) {
-//     document.getElementById("forGroupOnly").style = "display: none";
-//   }else if(document.getElementById("newGroup").checked) {
-//     document.getElementById("forGroupOnly").style = "display: normal";
-//   }
-// }
-//
-// function logRadioButtonSelection(){
-//   if(document.getElementById("logSolo").checked) {
-//     document.getElementById("forGroupOnly").style = "display: none";
-//   }else if(document.getElementById("logGroup").checked) {
-//     document.getElementById("forGroupOnly").style = "display: normal";
-//   }
-// }

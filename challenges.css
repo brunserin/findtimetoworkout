@@ -134,7 +134,10 @@ details > summary{
 #logShare{
 	margin-left: 10px;
 }
-
+#logRadioAll{
+	margin-top: 20px;
+	margin-left: 106px;
+}
 
 /*wraps form content for challenge logging*/
 /*provides centered white background for visual clarity*/
