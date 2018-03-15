@@ -49,3 +49,8 @@ function hideFriend(){
 	document.getElementById("annaKendrickLI").style = "display: none";
 	document.getElementById("all-friends").style = "height: 344px";
 }
+
+
+document.getElementById("trophy-icon").onclick = function(){
+	alert("Already enrolled in max number of challenges");
+}
