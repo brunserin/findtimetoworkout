@@ -51,6 +51,9 @@ bSubmit.onclick = function() {
         // }
         document.getElementById('logAmount').value = "";
         document.getElementById('logAmount').placeholder="e.g. 10"
+        document.getElementById('logShare').checked=0;
+        toggleVisibility();
+        document.getElementById('logAddMsg').value = "";
         logForm.style.display = "none";
       }
 
