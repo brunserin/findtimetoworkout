@@ -71,6 +71,7 @@ function resetLogForm(){
   document.getElementById('logAmount').value = "";
   document.getElementById('logAmount').placeholder="e.g. 10"
   document.getElementById('logShare').checked=0;
+  document.getElementById("logSelect").value = "Running";
   sharing = 1;
   toggleVisibility();
   document.getElementById('logAddMsg').value = "";
